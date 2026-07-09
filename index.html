@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kreston SVP | Chartered Accountants & Audit Firms in Qatar</title>
+  <title>Kreston Menon | Chartered Accountants & Audit Firms in UAE</title>
   <meta name="description"
-    content="Kreston SVP is one of the leading audit firms in Qatar. Registered auditors providing expert financial audits, tax advisory, company formation, and ICV certification." />
+    content="Kreston Menon is one of the leading audit and business consulting firms in the UAE. Registered auditors providing expert financial audits, tax advisory, company formation, and ICV certification." />
   <meta name="keywords"
-    content="audit firms in Qatar, top audit firms in Qatar, tax and audit services in Qatar, ICV certification Qatar, company formation Qatar, Kreston SVP" />
-  <meta name="author" content="Kreston SVP" />
+    content="audit firms in UAE, top audit firms in Dubai, tax and audit services in Abu Dhabi, ICV certification UAE, company formation Dubai, Kreston Menon, Kreston Global" />
+  <meta name="author" content="Kreston Menon" />
 
   <!-- Google Fonts: Inter for readability, Outfit for professional geometric headers -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,7 +19,7 @@
     rel="stylesheet" />
 
   <!-- FontAwesome Icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -29,24 +29,23 @@
         extend: {
           colors: {
             navy: {
-              DEFAULT: '#0b2b3c',
-              dark: '#020d14',
+              DEFAULT: '#0b2c3d',
+              dark: '#05151e',
               light: '#134057',
               950: '#030a0f',
             },
             brandBlue: {
-              DEFAULT: '#0084b4',
+              DEFAULT: '#00a3e0',
               light: '#38bdf8',
-              dark: '#005a7c',
+              dark: '#0084b4',
               50: '#f0f9ff',
               100: '#e0f2fe',
-              600: '#0284c7',
-              700: '#0369a1',
+              600: '#0084b4',
+              700: '#00628a',
             }
           },
           animation: {
-            'marquee': 'marquee 25s linear infinite',
-            'marquee-reverse': 'marquee-reverse 25s linear infinite',
+            'marquee': 'marquee 30s linear infinite',
             'float': 'float 6s ease-in-out infinite',
             'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
           },
@@ -54,10 +53,6 @@
             marquee: {
               '0%': { transform: 'translateX(0%)' },
               '100%': { transform: 'translateX(-100%)' },
-            },
-            'marquee-reverse': {
-              '0%': { transform: 'translateX(-100%)' },
-              '100%': { transform: 'translateX(0%)' },
             },
             float: {
               '0%, 100%': { transform: 'translateY(0px)' },
@@ -92,81 +87,59 @@
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
-
-    .clip-chevron {
-      clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);
-    }
-
-    @media (max-width: 1023px) {
-      .clip-chevron {
-        clip-path: none;
-      }
-    }
   </style>
 </head>
 
 <body class="antialiased bg-white text-slate-800 selection:bg-brandBlue/20 selection:text-navy overflow-x-hidden">
 
-  <!-- TOP HEADER BAR -->
-  <div class="bg-navy-950 text-white border-b border-white/5 py-2 px-4 sm:px-6 lg:px-8 text-xs font-semibold relative z-[60]">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-4 text-slate-300">
-        <span class="flex items-center gap-1.5">
-          <i class="fa-solid fa-phone text-brandBlue text-[10px]"></i>
-          QUESTIONS? CALL US: P <a href="tel:+97444694481" class="hover:text-white transition">+974 4469 4481</a>
-        </span>
-        <span class="hidden md:inline text-slate-600">|</span>
-        <span class="flex items-center gap-1.5">
-          <i class="fa-solid fa-mobile-screen-button text-brandBlue text-[10px]"></i>
-          M <a href="tel:+97466688575" class="hover:text-white transition">+974 6668 8575</a>
-        </span>
-      </div>
-      <div class="flex items-center gap-4">
-        <button onclick="toggleRFPModal(true)"
-          class="bg-brandBlue hover:bg-brandBlue-600 text-white px-4 py-1.5 rounded text-[11px] font-bold uppercase tracking-wider transition duration-300 shadow-md shadow-brandBlue/10 hover:shadow-brandBlue/20 flex items-center gap-1.5">
-          <i class="fa-solid fa-file-signature text-[10px]"></i> Submit RFP
-        </button>
-      </div>
-    </div>
-  </div>
+  <!-- TWO-ROW NAVIGATION HEADER -->
+  <header class="w-full z-50 bg-transparent absolute top-0 left-0 lg:relative lg:bg-white">
 
-  <!-- FLOATING NAVIGATION MENU -->
-  <header class="sticky top-0 w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-20">
-        <!-- Brand Logo -->
-        <a href="#home" class="flex items-center py-2 group">
-          <img alt="Kreston SVP Logo" class="h-12 w-auto object-contain transition-all hover:scale-105"
-            src="https://www.krestonsvp.com/wp-content/uploads/2025/10/Untitled-2-1-scaled.png" />
+    <!-- Top Row -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 bg-transparent lg:bg-white">
+      <div class="flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center">
+          <img src="https://krestonmenon.com/storage/uploads/common-cms/logo(1).svg" alt="Kreston Menon Logo"
+            class="h-16 w-auto object-contain" />
         </a>
 
-        <!-- Desktop Navigation links -->
-        <nav class="hidden lg:flex items-center gap-1.5">
-          <a href="#home" class="text-xs font-bold uppercase tracking-wider text-navy hover:text-brandBlue px-3 py-2 transition-colors">Home</a>
-          <span class="w-1.5 h-1.5 rounded-full bg-slate-200"></span>
-          <a href="#about" class="text-xs font-bold uppercase tracking-wider text-navy hover:text-brandBlue px-3 py-2 transition-colors">About Us</a>
-          <span class="w-1.5 h-1.5 rounded-full bg-slate-200"></span>
-          <a href="#services" class="text-xs font-bold uppercase tracking-wider text-navy hover:text-brandBlue px-3 py-2 transition-colors">Services</a>
-          <span class="w-1.5 h-1.5 rounded-full bg-slate-200"></span>
-          <a href="#why-kreston" class="text-xs font-bold uppercase tracking-wider text-navy hover:text-brandBlue px-3 py-2 transition-colors">International</a>
-          <span class="w-1.5 h-1.5 rounded-full bg-slate-200"></span>
-          <a href="#values" class="text-xs font-bold uppercase tracking-wider text-navy hover:text-brandBlue px-3 py-2 transition-colors">Gallery</a>
-          <span class="w-1.5 h-1.5 rounded-full bg-slate-200"></span>
-          <a href="#latest-news" class="text-xs font-bold uppercase tracking-wider text-navy hover:text-brandBlue px-3 py-2 transition-colors">Latest News</a>
-          <span class="w-1.5 h-1.5 rounded-full bg-slate-200"></span>
-          <a href="#contact" class="text-xs font-bold uppercase tracking-wider text-navy hover:text-brandBlue px-3 py-2 transition-colors">Contact Us</a>
-        </nav>
+        <!-- Right Side Contact Info & CTA -->
+        <div class="hidden lg:flex items-center gap-8">
+          <!-- Call Us Now -->
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-brandBlue">
+              <i class="fa-solid fa-phone text-sm"></i>
+            </div>
+            <div>
+              <span class="block text-[10px] text-slate-400 font-bold uppercase tracking-wider">Call Us Now</span>
+              <a href="tel:+97142762233" class="text-xs font-black text-navy hover:text-brandBlue transition">+971 4 276
+                2233</a>
+            </div>
+          </div>
 
-        <!-- CTAs -->
-        <div class="hidden lg:flex items-center gap-4">
+          <!-- Connect Mail -->
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-brandBlue">
+              <i class="fa-solid fa-envelope text-sm"></i>
+            </div>
+            <div>
+              <span class="block text-[10px] text-slate-400 font-bold uppercase tracking-wider">Connect Mail</span>
+              <a href="mailto:info@krestonmenon.com"
+                class="text-xs font-black text-navy hover:text-brandBlue transition">info@krestonmenon.com</a>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
           <a href="#contact"
-            class="bg-navy hover:bg-navy-950 text-white px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 border border-transparent hover:border-brandBlue/30">
-            Get In Touch
+            class="bg-gradient-to-r from-brandBlue to-[#0084b4] hover:from-[#0084b4] hover:to-brandBlue text-white py-2.5 px-6 rounded-full text-xs font-bold uppercase tracking-wider transition shadow-md hover:shadow-lg shadow-brandBlue/10 hover:-translate-y-0.5">
+            Get in Touch
           </a>
         </div>
 
         <!-- Mobile Menu Toggle Button -->
-        <button id="menu-toggle" class="lg:hidden p-2 text-navy focus:outline-none" aria-label="Toggle Menu">
+        <button id="menu-toggle" class="lg:hidden p-2 text-white lg:text-navy focus:outline-none"
+          aria-label="Toggle Menu">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="lucide lucide-menu" aria-hidden="true">
@@ -177,862 +150,561 @@
         </button>
       </div>
     </div>
+
+    <!-- Bottom Row (Dark Navy Bar) -->
+    <div class="w-full bg-[#1e2d3b] border-t border-slate-100 hidden lg:block relative z-40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav class="flex items-center gap-8 py-3 text-xs font-bold text-slate-300 uppercase tracking-wider">
+          <a href="#home" class="text-white hover:text-brandBlue transition-colors py-1">Home</a>
+
+          <!-- About Us Dropdown -->
+          <div class="relative group py-1">
+            <button class="flex items-center gap-1.5 hover:text-brandBlue transition-colors focus:outline-none">
+              About Us <i class="fa-solid fa-chevron-down text-[8px] mt-0.5"></i>
+            </button>
+            <div
+              class="absolute left-0 mt-3 w-48 rounded-xl bg-white border border-slate-100 shadow-xl py-2 z-50 hidden group-hover:block transition duration-200">
+              <a href="#about" class="block px-4 py-2.5 text-xs text-navy hover:bg-slate-50 hover:text-brandBlue">Who We
+                Are</a>
+              <a href="#why-kreston"
+                class="block px-4 py-2.5 text-xs text-navy hover:bg-slate-50 hover:text-brandBlue">Vast Experience</a>
+            </div>
+          </div>
+
+          <!-- Services Dropdown -->
+          <div class="relative group py-1">
+            <button class="flex items-center gap-1.5 hover:text-brandBlue transition-colors focus:outline-none">
+              Services <i class="fa-solid fa-chevron-down text-[8px] mt-0.5"></i>
+            </button>
+            <div
+              class="absolute left-0 mt-3 w-48 rounded-xl bg-white border border-slate-100 shadow-xl py-2 z-50 hidden group-hover:block transition duration-200">
+              <a href="#tabs-section" onclick="setServiceAndScroll('audit')"
+                class="block px-4 py-2.5 text-xs text-navy hover:bg-slate-50 hover:text-brandBlue">Audit & Assurance</a>
+              <a href="#tabs-section" onclick="setServiceAndScroll('tax')"
+                class="block px-4 py-2.5 text-xs text-navy hover:bg-slate-50 hover:text-brandBlue">Taxation</a>
+              <a href="#tabs-section" onclick="setServiceAndScroll('advisory')"
+                class="block px-4 py-2.5 text-xs text-navy hover:bg-slate-50 hover:text-brandBlue">Advisory</a>
+              <a href="#tabs-section" onclick="setServiceAndScroll('risk')"
+                class="block px-4 py-2.5 text-xs text-navy hover:bg-slate-50 hover:text-brandBlue">Risk Advisory</a>
+              <a href="#tabs-section" onclick="setServiceAndScroll('corporate')"
+                class="block px-4 py-2.5 text-xs text-navy hover:bg-slate-50 hover:text-brandBlue">Corporate
+                Services</a>
+              <a href="#tabs-section" onclick="setServiceAndScroll('fdi')"
+                class="block px-4 py-2.5 text-xs text-navy hover:bg-slate-50 hover:text-brandBlue">FDI & Business
+                Setup</a>
+            </div>
+          </div>
+
+          <a href="#why-kreston" class="hover:text-brandBlue transition-colors py-1">Kreston Global</a>
+          <a href="#resources-section" class="hover:text-brandBlue transition-colors py-1">Publications</a>
+
+          <!-- Insights Dropdown -->
+          <div class="relative group py-1">
+            <button class="flex items-center gap-1.5 hover:text-brandBlue transition-colors focus:outline-none">
+              Insights <i class="fa-solid fa-chevron-down text-[8px] mt-0.5"></i>
+            </button>
+            <div
+              class="absolute left-0 mt-3 w-48 rounded-xl bg-white border border-slate-100 shadow-xl py-2 z-50 hidden group-hover:block transition duration-200">
+              <a href="#resources-section"
+                class="block px-4 py-2.5 text-xs text-navy hover:bg-slate-50 hover:text-brandBlue">Articles</a>
+              <a href="#resources-section"
+                class="block px-4 py-2.5 text-xs text-navy hover:bg-slate-50 hover:text-brandBlue">Updates</a>
+            </div>
+          </div>
+
+          <a href="#contact" class="hover:text-brandBlue transition-colors py-1">Careers</a>
+
+          <!-- Contact Us Dropdown -->
+          <div class="relative group py-1">
+            <button class="flex items-center gap-1.5 hover:text-brandBlue transition-colors focus:outline-none">
+              Contact Us <i class="fa-solid fa-chevron-down text-[8px] mt-0.5"></i>
+            </button>
+            <div
+              class="absolute left-0 mt-3 w-48 rounded-xl bg-white border border-slate-100 shadow-xl py-2 z-50 hidden group-hover:block transition duration-200">
+              <a href="#contact" class="block px-4 py-2.5 text-xs text-navy hover:bg-slate-50 hover:text-brandBlue">Our
+                Branches</a>
+              <a href="#contact" class="block px-4 py-2.5 text-xs text-navy hover:bg-slate-50 hover:text-brandBlue">Book
+                a Meeting</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
   </header>
 
   <!-- MOBILE MENU DRAWER -->
   <div id="mobile-drawer" class="fixed inset-0 z-[100] hidden">
-    <div class="fixed inset-0 bg-navy-950/60 backdrop-blur-sm" id="drawer-overlay"></div>
-    <div class="fixed inset-y-0 right-0 w-full max-w-xs bg-white p-6 shadow-2xl flex flex-col justify-between transition-all duration-300">
+    <!-- Backdrop -->
+    <div
+      class="fixed inset-0 bg-navy-950/60 backdrop-blur-sm opacity-0 transition-opacity duration-300 pointer-events-none"
+      id="drawer-overlay"></div>
+    <!-- Content Panel -->
+    <div id="drawer-content"
+      class="fixed inset-y-0 right-0 w-full max-w-xs bg-white p-6 shadow-2xl flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-out z-10">
       <div>
         <div class="flex justify-between items-center mb-8 border-b border-slate-100 pb-4">
-          <div class="flex items-center py-2">
-            <img alt="Kreston SVP Logo" class="h-10 w-auto object-contain"
-              src="https://www.krestonsvp.com/wp-content/uploads/2025/10/Untitled-2-1-scaled.png" />
-          </div>
+          <img src="https://krestonmenon.com/storage/uploads/common-cms/logo(1).svg" alt="Kreston Menon Logo"
+            class="h-10 w-auto object-contain" />
           <button id="drawer-close" class="p-2 text-navy hover:bg-slate-100 rounded-full transition-colors">
             <i class="fa-solid fa-xmark text-lg"></i>
           </button>
         </div>
         <div class="flex flex-col gap-3 text-sm font-bold text-navy uppercase tracking-wider">
-          <a href="#home" class="hover:text-brandBlue py-2 border-b border-slate-50 transition-colors">Home</a>
-          <a href="#about" class="hover:text-brandBlue py-2 border-b border-slate-50 transition-colors">About Us</a>
-          <a href="#services" class="hover:text-brandBlue py-2 border-b border-slate-50 transition-colors">Services</a>
-          <a href="#why-kreston" class="hover:text-brandBlue py-2 border-b border-slate-50 transition-colors">International</a>
-          <a href="#values" class="hover:text-brandBlue py-2 border-b border-slate-50 transition-colors">Gallery</a>
-          <a href="#latest-news" class="hover:text-brandBlue py-2 border-b border-slate-50 transition-colors">Latest News</a>
-          <a href="#contact" class="hover:text-brandBlue py-2 transition-colors">Contact Us</a>
+          <a href="#home"
+            class="hover:text-brandBlue py-2.5 border-b border-slate-50 transition-colors flex items-center justify-between">Home
+            <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i></a>
+          <a href="#about"
+            class="hover:text-brandBlue py-2.5 border-b border-slate-50 transition-colors flex items-center justify-between">About
+            Us <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i></a>
+          <a href="#services-grid"
+            class="hover:text-brandBlue py-2.5 border-b border-slate-50 transition-colors flex items-center justify-between">Services
+            <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i></a>
+          <a href="#why-kreston"
+            class="hover:text-brandBlue py-2.5 border-b border-slate-50 transition-colors flex items-center justify-between">Global
+            Network <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i></a>
+          <a href="#resources-section"
+            class="hover:text-brandBlue py-2.5 border-b border-slate-50 transition-colors flex items-center justify-between">Publications
+            <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i></a>
+          <a href="#contact"
+            class="hover:text-brandBlue py-2.5 transition-colors flex items-center justify-between">Contact Us <i
+              class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i></a>
         </div>
       </div>
       <div class="border-t border-slate-100 pt-6">
         <a href="#contact"
-          class="block w-full bg-brandBlue text-white text-center py-3.5 rounded-xl font-bold uppercase tracking-wider text-xs hover:bg-brandBlue-600 transition-colors shadow-lg shadow-brandBlue/10">
-          Get In Touch
+          class="block w-full bg-brandBlue text-white text-center py-3.5 rounded-xl font-bold uppercase tracking-wider text-xs hover:bg-brandBlue-dark transition-colors shadow-lg shadow-brandBlue/10">
+          Get in Touch
         </a>
       </div>
     </div>
   </div>
 
-  <!-- HERO SECTION ("Crazy Eye Candy" with strict color science) -->
-  <section id="home" class="relative min-h-[92vh] flex items-center justify-center bg-navy-950 text-white overflow-hidden py-16">
-    <!-- Grid Overlay background -->
-    <div class="absolute inset-0 opacity-[0.06] z-0 pointer-events-none">
-      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <pattern id="hero-grid" width="60" height="60" patternUnits="userSpaceOnUse">
-            <path d="M 60 0 L 0 0 0 60" fill="none" stroke="white" stroke-width="1" />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#hero-grid)" />
-      </svg>
-    </div>
-
-    <!-- Glowing Vector Spheres (strict Blue/Navy colors, zero yellow) -->
-    <div class="absolute top-[20%] left-[10%] w-[35rem] h-[35rem] bg-brandBlue/15 rounded-full blur-[120px] animate-pulse-slow pointer-events-none z-0"></div>
-    <div class="absolute bottom-[10%] right-[5%] w-[45rem] h-[45rem] bg-navy-light/20 rounded-full blur-[140px] animate-pulse pointer-events-none z-0"></div>
-
-    <!-- City Skyline background image with rich Navy overlay -->
+  <!-- HERO SECTION -->
+  <section id="home"
+    class="relative lg:h-[calc(100vh-130px)] lg:min-h-[620px] flex flex-col justify-center overflow-hidden pt-24 pb-8 lg:pt-16 lg:pb-4">
+    <!-- Background Image & Overlay -->
     <div class="absolute inset-0 z-0">
-      <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-navy-950/65 z-10"></div>
-      <img class="w-full h-full object-cover object-center opacity-35"
-        src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1920&q=80" alt="Qatar Doha Skyline Background" />
+      <img class="w-full h-full object-cover object-right"
+        src="https://krestonmenon.com/storage/uploads/home-cms/banner.webp" alt="Kreston Menon Business Team" />
+      <!-- Dark gradient overlay on mobile for readability, transparent on desktop -->
+      <div class="absolute inset-0 bg-[#0b2c3d]/65 lg:bg-transparent z-10"></div>
     </div>
 
-    <!-- Content Area -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <!-- Text details -->
-        <div class="lg:col-span-7 space-y-8">
-          <div class="inline-flex items-center gap-2 py-2 px-4 border border-brandBlue/35 rounded-full bg-brandBlue/10 text-brandBlue-light text-xs font-bold uppercase tracking-widest">
-            <div class="w-2 h-2 rounded-full bg-brandBlue-light animate-ping"></div>
-            Kreston Global Affiliated Firm
-          </div>
-
-          <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white leading-[1.08]">
-            KRESTON SVP
-            <br />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandBlue-light via-brandBlue to-white">
-              TRUSTED AUDITORS
-            </span>
-            <br />
-            IN QATAR
-          </h1>
-
-          <p class="text-slate-300 text-lg leading-relaxed max-w-xl">
-            As a leading independent audit and consulting firm in Qatar, we transform regulatory compliance into competitive advantage, bridging local knowledge and global standards.
-          </p>
-
-          <div class="flex flex-wrap items-center gap-4">
-            <a href="#services"
-              class="inline-flex items-center justify-center bg-brandBlue border-2 border-transparent text-white px-8 py-3.5 rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-brandBlue-600 transition-all shadow-lg shadow-brandBlue/20 text-center hover:-translate-y-0.5">
-              Explore Our Services
-            </a>
-            <button onclick="toggleRFPModal(true)"
-              class="inline-flex items-center justify-center border-2 border-white/30 text-white px-8 py-3.5 rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-white/10 hover:border-white transition-all text-center hover:-translate-y-0.5">
-              Submit RFP Proposal
-            </button>
-          </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col justify-between h-full">
+      <!-- Title & CTA Button -->
+      <div class="max-w-3xl space-y-3 pt-2 pb-2 lg:pb-3">
+        <!-- Dot Category Label -->
+        <div
+          class="flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-slate-300 lg:text-slate-500">
+          <span class="w-2.5 h-2.5 rounded-full bg-brandBlue animate-pulse"></span>
+          Kreston Menon
         </div>
-
-        <!-- Premium visual eye-candy overlay (Layered stats widget) -->
-        <div class="lg:col-span-5 relative mt-6 lg:mt-0">
-          <div class="relative w-full max-w-md mx-auto aspect-square flex items-center justify-center animate-float">
-            <!-- Outermost glowing ring -->
-            <div class="absolute inset-0 rounded-full border border-brandBlue/20 animate-spin" style="animation-duration: 25s;"></div>
-            <!-- Middle ring -->
-            <div class="absolute inset-8 rounded-full border border-dashed border-white/10 animate-spin" style="animation-duration: 40s; animation-direction: reverse;"></div>
-            <!-- Innermost content (Glassmorphic card) -->
-            <div class="absolute inset-16 bg-navy-light/10 backdrop-blur-xl border border-white/10 rounded-2xl p-6 flex flex-col justify-between shadow-2xl">
-              <div class="flex justify-between items-start">
-                <span class="text-[10px] uppercase font-bold tracking-[0.2em] text-brandBlue-light">Global Network</span>
-                <i class="fa-solid fa-earth-americas text-brandBlue text-lg"></i>
-              </div>
-              <div class="my-auto space-y-1">
-                <div class="text-4xl sm:text-5xl font-black text-white">120+</div>
-                <div class="text-xs text-slate-300 font-semibold uppercase tracking-wider">Countries Network Operations</div>
-              </div>
-              <div class="border-t border-white/10 pt-4 flex justify-between items-center">
-                <span class="text-[10px] text-slate-400 font-medium">Kreston Global Affiliation</span>
-                <span class="w-2.5 h-2.5 rounded-full bg-brandBlue shadow-[0_0_8px_rgba(0,132,180,0.8)]"></span>
-              </div>
-            </div>
-
-            <!-- Absolute positioned small badge 1 -->
-            <div class="absolute top-2 -right-4 bg-navy-light/80 backdrop-blur-md border border-white/10 px-4 py-2.5 rounded-xl flex items-center gap-3 shadow-lg">
-              <div class="w-8 h-8 rounded-lg bg-brandBlue/20 flex items-center justify-center">
-                <i class="fa-solid fa-users text-brandBlue-light"></i>
-              </div>
-              <div>
-                <div class="text-xs font-black text-white">25+</div>
-                <div class="text-[8px] text-slate-300 font-bold uppercase tracking-wider">Local Experts</div>
-              </div>
-            </div>
-
-            <!-- Absolute positioned small badge 2 -->
-            <div class="absolute bottom-4 -left-4 bg-navy-light/80 backdrop-blur-md border border-white/10 px-4 py-2.5 rounded-xl flex items-center gap-3 shadow-lg">
-              <div class="w-8 h-8 rounded-lg bg-brandBlue/20 flex items-center justify-center">
-                <i class="fa-solid fa-square-poll-vertical text-brandBlue-light"></i>
-              </div>
-              <div>
-                <div class="text-xs font-black text-white">4.8 / 5.0</div>
-                <div class="text-[8px] text-slate-300 font-bold uppercase tracking-wider">Google Review Rating</div>
-              </div>
-            </div>
-
-          </div>
+        <h1 class="text-3xl sm:text-4xl font-black tracking-tight leading-tight uppercase text-white lg:text-navy">
+          Helping Organizations Transform<br />
+          <span class="text-[#00a3e0]">
+            All These Years
+          </span>
+        </h1>
+        <div class="pt-2">
+          <!-- Get a Quote Rounded-Full Pill Button -->
+          <a href="#contact"
+            class="inline-flex items-center justify-center bg-brandBlue hover:bg-brandBlue-dark text-white px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition shadow-md hover:-translate-y-0.5">
+            Get a Quote
+          </a>
         </div>
       </div>
-    </div>
 
-    <!-- Mouse Scroll Down indicator -->
-    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 text-white/30 hover:text-white/60 transition-colors pointer-events-none">
-      <span class="text-[9px] uppercase tracking-[0.2em] font-semibold">Scroll Down</span>
-      <div class="w-5 h-8 border-2 border-white/20 rounded-full flex justify-center pt-1">
-        <div class="w-1 h-2 bg-brandBlue rounded-full animate-bounce"></div>
+      <!-- 15 Service Cards Grid (Grid on desktop, horizontal swipable carousel on mobile) -->
+      <div
+        class="w-full flex overflow-x-auto snap-x no-scrollbar lg:grid lg:grid-cols-5 gap-3 lg:gap-4 mt-2 lg:mt-3 py-2"
+        id="services-grid">
+
+        <!-- Card 1 -->
+        <a href="#contact" onclick="selectServiceAndScroll('Audit & Assurance'); return false;"
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          <i
+            class="fa-solid fa-file-invoice text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
+          <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Audit & Assurance
+          </h3>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="#contact" onclick="selectServiceAndScroll('Business Advisory'); return false;"
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          <i
+            class="fa-solid fa-chart-pie text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
+          <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Business Advisory
+          </h3>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="#contact" onclick="selectServiceAndScroll('AML Compliance'); return false;"
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          <i
+            class="fa-solid fa-shield-halved text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
+          <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">AML Compliance
+          </h3>
+        </a>
+
+        <!-- Card 4 -->
+        <a href="#contact" onclick="selectServiceAndScroll('Corporate Tax'); return false;"
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          <i
+            class="fa-solid fa-percent text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
+          <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Corporate Tax
+          </h3>
+        </a>
+
+        <!-- Card 5 -->
+        <a href="#contact" onclick="selectServiceAndScroll('ICV Certification Program'); return false;"
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          <i
+            class="fa-solid fa-award text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
+          <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">ICV Certification
+            Program</h3>
+        </a>
+
+        <!-- Card 6 -->
+        <a href="#contact" onclick="selectServiceAndScroll('Payroll Services'); return false;"
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          <i
+            class="fa-solid fa-money-check-dollar text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
+          <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Payroll Services
+          </h3>
+        </a>
+
+        <!-- Card 7 -->
+        <a href="#contact" onclick="selectServiceAndScroll('Technology Consulting'); return false;"
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          <i
+            class="fa-solid fa-laptop-code text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
+          <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Technology
+            Consulting</h3>
+        </a>
+
+        <!-- Card 8 -->
+        <a href="#contact" onclick="selectServiceAndScroll('Bookkeeping & Accounting Services'); return false;"
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          <i
+            class="fa-solid fa-book-open text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
+          <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Bookkeeping
+            Services</h3>
+        </a>
+
+        <!-- Card 9 -->
+        <a href="#contact" onclick="selectServiceAndScroll('Company Formation & Corporate Services'); return false;"
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          <i
+            class="fa-solid fa-building text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
+          <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Company Setup
+          </h3>
+        </a>
+
+        <!-- Card 10 -->
+        <a href="#contact" onclick="selectServiceAndScroll('Corporate Finance'); return false;"
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          <i
+            class="fa-solid fa-coins text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
+          <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Corporate Finance
+          </h3>
+        </a>
+
+        <!-- Card 11 -->
+        <a href="#contact" onclick="selectServiceAndScroll('Governance & Risk Management'); return false;"
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          <i
+            class="fa-solid fa-scale-balanced text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
+          <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Risk Management
+          </h3>
+        </a>
+
+        <!-- Card 12 -->
+        <a href="#contact" onclick="selectServiceAndScroll('VAT Consulting & E-Invoicing'); return false;"
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          <i
+            class="fa-solid fa-receipt text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
+          <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">VAT & E-Invoicing
+          </h3>
+        </a>
+
+        <!-- Card 13 -->
+        <a href="#contact" onclick="selectServiceAndScroll('Debt Advisory'); return false;"
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          <i
+            class="fa-solid fa-file-shield text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
+          <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Debt Advisory
+          </h3>
+        </a>
+
+        <!-- Card 14 -->
+        <a href="#contact" onclick="selectServiceAndScroll('Strategic Financial Advisory'); return false;"
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          <i
+            class="fa-solid fa-lightbulb text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
+          <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Financial
+            Advisory</h3>
+        </a>
+
+        <!-- Card 15 -->
+        <a href="#contact" onclick="selectServiceAndScroll('Security & Cyber Resilience'); return false;"
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          <i
+            class="fa-solid fa-shield-virus text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
+          <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Cyber Resilience
+          </h3>
+        </a>
+
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <div class="flex justify-center pt-2 pb-1 lg:pb-0">
+        <a href="#about"
+          class="text-navy/60 hover:text-brandBlue transition-colors animate-bounce flex flex-col items-center gap-1"
+          aria-label="Scroll Down">
+          <span class="text-[9px] font-extrabold uppercase tracking-widest">Scroll Down</span>
+          <i class="fa-solid fa-chevron-down text-sm"></i>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- AFFILIATION / MARQUEE TICKER (Continuous Ticker for Credentials) -->
-  <div class="bg-navy border-y border-white/5 overflow-hidden py-5 relative z-20">
-    <div class="flex w-full whitespace-nowrap animate-marquee hover:[animation-play-state:paused]">
-      <div class="flex gap-16 mx-8 items-center text-slate-300 font-bold uppercase tracking-[0.25em] text-[10px]">
-        <div class="flex items-center gap-2.5">
-          <span class="w-2 h-2 rounded-full bg-brandBlue shadow-[0_0_8px_rgba(0,132,180,0.8)]"></span>
-          Approved Auditor for Qatar Development Bank (QDB)
+  <!-- SUPERBRANDS SECTION (Directly after Hero) -->
+  <section class="py-16 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="bg-[#0b2c3d] rounded-[2rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl relative w-full">
+        <!-- Left Column: Team Photo (60%) -->
+        <div class="w-full lg:w-[60%] relative min-h-[350px] lg:min-h-[420px] overflow-hidden bg-[#0b2c3d]">
+          <img src="superbrands-team.webp" alt="Kreston Menon Superbrands Team"
+            class="w-full h-full object-cover object-left absolute inset-0" />
+          <!-- Smooth Gradient Mask: Vertical on mobile, Horizontal on desktop -->
+          <div
+            class="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-transparent via-[#0b2c3d]/15 to-[#0b2c3d] z-10">
+          </div>
         </div>
-        <div class="flex items-center gap-2.5">
-          <span class="w-2 h-2 rounded-full bg-brandBlue shadow-[0_0_8px_rgba(0,132,180,0.8)]"></span>
-          Qatar Central Bank Compliant
-        </div>
-        <div class="flex items-center gap-2.5">
-          <span class="w-2 h-2 rounded-full bg-brandBlue shadow-[0_0_8px_rgba(0,132,180,0.8)]"></span>
-          Approved Commercial and Islamic Banks Auditor
-        </div>
-        <div class="flex items-center gap-2.5">
-          <span class="w-2 h-2 rounded-full bg-brandBlue shadow-[0_0_8px_rgba(0,132,180,0.8)]"></span>
-          GTA Tax compliance Expert
-        </div>
-        <div class="flex items-center gap-2.5">
-          <span class="w-2 h-2 rounded-full bg-brandBlue shadow-[0_0_8px_rgba(0,132,180,0.8)]"></span>
-          ICV Certified consultants
-        </div>
-      </div>
-      <div class="flex gap-16 mx-8 items-center text-slate-300 font-bold uppercase tracking-[0.25em] text-[10px]">
-        <div class="flex items-center gap-2.5">
-          <span class="w-2 h-2 rounded-full bg-brandBlue shadow-[0_0_8px_rgba(0,132,180,0.8)]"></span>
-          Approved Auditor for Qatar Development Bank (QDB)
-        </div>
-        <div class="flex items-center gap-2.5">
-          <span class="w-2 h-2 rounded-full bg-brandBlue shadow-[0_0_8px_rgba(0,132,180,0.8)]"></span>
-          Qatar Central Bank Compliant
-        </div>
-        <div class="flex items-center gap-2.5">
-          <span class="w-2 h-2 rounded-full bg-brandBlue shadow-[0_0_8px_rgba(0,132,180,0.8)]"></span>
-          Approved Commercial and Islamic Banks Auditor
-        </div>
-        <div class="flex items-center gap-2.5">
-          <span class="w-2 h-2 rounded-full bg-brandBlue shadow-[0_0_8px_rgba(0,132,180,0.8)]"></span>
-          GTA Tax compliance Expert
-        </div>
-        <div class="flex items-center gap-2.5">
-          <span class="w-2 h-2 rounded-full bg-brandBlue shadow-[0_0_8px_rgba(0,132,180,0.8)]"></span>
-          ICV Certified consultants
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- ABOUT KRESTON SVP SECTION -->
-  <section id="about" class="py-24 bg-white relative overflow-hidden">
+        <!-- Right Column: Gold Serif branding & text description (40%) -->
+        <div
+          class="w-full lg:w-[40%] p-8 lg:p-12 flex flex-col justify-center space-y-6 lg:pl-16 text-white min-h-[350px] lg:min-h-[420px] relative z-20">
+          <h2 class="text-4xl sm:text-5xl font-serif text-[#ebd6b0] tracking-wide leading-none">Superbrands</h2>
+          <p class="text-base sm:text-lg text-slate-200 leading-relaxed font-light">
+            <span class="font-bold text-[#00a3e0]">Kreston Menon</span> has been awarded the Superbrands status by the
+            Superbrands Council for our market reputation and branding excellence, consecutively for the last <span
+              class="font-bold">12 years.</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Superbrands Seal Tagged Overlay (Bottom Right corner, half inside, half outside) -->
+      <img src="https://krestonmenon.com/storage/uploads/home-cms/awards(1).png" alt="Awarded Superbrands Tag"
+        class="absolute bottom-[-20px] lg:bottom-[-30px] right-8 lg:right-12 z-30 w-28 lg:w-36 h-auto animate-float" />
+    </div>
+  </section>
+
+  <!-- LEADING ACCOUNTING & ADVISORY FIRM IN UAE -->
+  <section class="py-24 bg-white relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <!-- Text Content -->
+        <!-- Text Block -->
         <div class="lg:col-span-7 space-y-6">
-          <div class="inline-flex items-center gap-2 py-1 px-3.5 bg-brandBlue-50 border border-brandBlue-100 rounded-full text-brandBlue font-bold text-xs uppercase tracking-widest">
-            <i class="fa-solid fa-users-viewfinder text-[10px]"></i> About Kreston SVP
-          </div>
-          <h2 class="text-3xl sm:text-4xl font-black text-navy leading-tight">
-            Kreston SVP Chartered Accountants in Qatar
+          <h2 class="text-3xl sm:text-4xl font-black text-navy uppercase leading-tight">
+            Leading Accounting & Advisory Firm in UAE
           </h2>
-
-          <div class="space-y-4 text-slate-600 text-[15px] leading-relaxed">
+          <div class="space-y-4 text-slate-600 text-sm leading-relaxed">
             <p>
-              At Kreston SVP, we believe that trust is the foundation of every successful business. As one of the leading audit firms in Qatar, we provide expert financial and consulting solutions tailored for startups, SMEs, and large corporations.
+              At Kreston Menon, we operate with a client-centric perspective, turning strategic insights into
+              operational realities. Our professionals deliver a full suite of audit, tax planning, financial
+              structuring, and corporate risk advisory services across mainland UAE and major free zones.
             </p>
             <p>
-              We are proud to be part of <span class="font-bold text-navy">Kreston Global</span>, a worldwide network of independent accounting firms operating in over 120 countries. This global reach, combined with our deep local knowledge of Qatar’s regulatory environment, ensures services that meet international standards while aligning with Qatar’s compliance framework.
+              As a key member of the <span class="font-bold text-navy">Kreston Global Network</span>, we connect our
+              clients to international capabilities spanning 120+ countries, while ensuring compliance with local
+              regulatory frameworks, federal corporate taxation, and In-Country Value requirements.
             </p>
-            <p>
-              Whether you need financial audits, tax advisory services, business restructuring, or company formation in Qatar, Kreston SVP is your trusted partner.
-            </p>
-          </div>
-
-          <!-- Bottom Info Points -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-            <div class="flex items-start gap-3">
-              <div class="w-8 h-8 rounded-lg bg-brandBlue-50 flex items-center justify-center flex-shrink-0">
-                <svg class="w-4 h-4 text-brandBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
-                </svg>
-              </div>
-              <div>
-                <h4 class="font-bold text-navy text-sm">Worldwide Affiliation</h4>
-                <p class="text-xs text-slate-500">Over 120+ countries global reach</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-3">
-              <div class="w-8 h-8 rounded-lg bg-brandBlue-50 flex items-center justify-center flex-shrink-0">
-                <svg class="w-4 h-4 text-brandBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
-                </svg>
-              </div>
-              <div>
-                <h4 class="font-bold text-navy text-sm">Deep Local Compliance</h4>
-                <p class="text-xs text-slate-500">Aligned with Qatar compliance framework</p>
-              </div>
-            </div>
           </div>
         </div>
 
-        <!-- Layered Card Mockup (Crazy eye candy) -->
-        <div class="lg:col-span-5 relative mt-8 lg:mt-0 flex justify-center">
-          <div class="relative w-full max-w-[340px] aspect-[4/5] bg-navy rounded-3xl p-8 border border-white/10 shadow-2xl flex flex-col justify-between text-white">
-            <!-- Background mesh -->
-            <div class="absolute inset-0 bg-gradient-to-br from-brandBlue/30 to-transparent rounded-3xl pointer-events-none z-0"></div>
-
-            <div class="relative z-10 flex justify-between items-center border-b border-white/10 pb-4">
-              <span class="text-[10px] uppercase font-bold tracking-widest text-slate-300">Qatar Audit License</span>
-              <span class="text-xs font-black text-brandBlue-light uppercase">Class A</span>
-            </div>
-
-            <div class="relative z-10 space-y-4 my-auto">
-              <div class="text-[11px] font-bold text-brandBlue uppercase tracking-widest">Our Mandate</div>
-              <h3 class="text-2xl font-black leading-tight text-white">
-                Ensuring Rigorous Financial Excellence
-              </h3>
-              <p class="text-xs text-slate-300 leading-relaxed">
-                Empowering businesses across Qatar through independent assessments, ethical guidance, and strategic tax planning.
-              </p>
-            </div>
-
-            <!-- Overlapping floating stats badge -->
-            <div class="absolute -right-6 bottom-[25%] bg-white text-navy p-5 rounded-2xl shadow-xl border border-slate-100 flex flex-col items-center justify-center gap-1">
-              <span class="text-3xl font-black text-brandBlue leading-none">25+</span>
-              <span class="text-[9px] font-bold text-slate-400 uppercase tracking-wider text-center">Team Members</span>
-            </div>
-
-            <div class="relative z-10 border-t border-white/10 pt-4 flex justify-between items-center text-[10px] text-slate-400 font-semibold uppercase">
-              <span>Established Trust</span>
-              <span>Doha, Qatar</span>
-            </div>
+        <!-- Slanted/Curved Image Block -->
+        <div class="lg:col-span-5 relative flex justify-center">
+          <div
+            class="relative overflow-hidden rounded-[100px_30px_100px_30px] border border-slate-100 shadow-2xl w-full max-w-[420px]">
+            <img src="https://krestonmenon.com/storage/uploads/home-cms/about(1).webp" alt="Executive team meeting"
+              class="w-full h-[380px] object-cover object-center" />
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES SECTION (Modern dark-gradient layout with left white panel) -->
-  <section id="services" class="bg-navy-950 text-white relative overflow-hidden">
-    <!-- Grid overlay -->
-    <div class="absolute inset-0 opacity-[0.03] z-0 pointer-events-none">
-      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-        <rect width="100%" height="100%" fill="url(#hero-grid)" />
-      </svg>
+  <!-- ABOUT KRESTON MENON (Stats, Premium Architectural Image, and official badges) -->
+  <section id="about" class="py-24 bg-[#061f2d] text-white relative overflow-hidden border-t border-white/5">
+    <!-- Glowing background elements for premium feel -->
+    <div class="absolute top-1/4 left-0 w-72 h-72 bg-brandBlue/10 rounded-full blur-[100px] pointer-events-none"></div>
+    <div class="absolute bottom-1/4 right-0 w-80 h-80 bg-[#00a3e0]/10 rounded-full blur-[120px] pointer-events-none">
     </div>
 
-    <!-- Glowing blob behind grid -->
-    <div class="absolute bottom-[-10%] left-[20%] w-[40rem] h-[40rem] bg-brandBlue/10 rounded-full blur-[130px] pointer-events-none z-0"></div>
-
-    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row min-h-[700px] relative z-10">
-      <!-- Left side header block (White Chevron panel similar to Abdullah-al-Hamadi.html style) -->
-      <div class="lg:w-1/3 bg-white flex items-center justify-center py-20 px-8 relative clip-chevron text-navy">
-        <div class="absolute left-0 top-0 bottom-0 w-2 bg-brandBlue z-10"></div>
-        <div class="text-center lg:text-left space-y-4">
-          <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-brandBlue-50 border border-brandBlue-100 rounded-full text-brandBlue font-bold text-xs uppercase tracking-widest">
-            Expertise
-          </div>
-          <h2 class="text-4xl sm:text-5xl font-black tracking-tight leading-none text-navy">
-            OUR
-            <br />
-            <span class="font-light text-slate-600">SERVICES</span>
-          </h2>
-          <p class="text-xs text-slate-400 max-w-[200px] mx-auto lg:mx-0 leading-relaxed font-semibold">
-            Delivering audit and consulting standards that meet international criteria while complying locally.
-          </p>
-        </div>
-      </div>
-
-      <!-- Right side Services Grid (Bespoke SVGs, glowing blue hover states) -->
-      <div class="lg:w-2/3 py-20 px-8 lg:pl-16 flex items-center">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-
-          <!-- Service 1: ICV Certification -->
-          <div class="group bg-navy-light/10 backdrop-blur-md border border-white/5 p-6 rounded-2xl hover:border-brandBlue/30 hover:bg-navy-light/20 transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-brandBlue/5">
-            <div class="flex items-center justify-between mb-4">
-              <div class="w-12 h-12 rounded-xl bg-brandBlue/10 flex items-center justify-center text-brandBlue group-hover:bg-brandBlue group-hover:text-white transition-all duration-300">
-                <!-- ICV Icon -->
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                </svg>
-              </div>
-              <span class="text-[10px] font-mono text-slate-500 font-bold tracking-widest group-hover:text-brandBlue-light transition-colors">SF // 01</span>
-            </div>
-            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-brandBlue-light transition-colors">ICV Certification</h3>
-            <ul class="space-y-2 text-xs text-slate-400 leading-relaxed">
-              <li class="flex items-start gap-2">
-                <i class="fa-solid fa-check text-brandBlue mt-0.5"></i>
-                <span>Helping companies achieve In-Country Value (ICV) compliance.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fa-solid fa-check text-brandBlue mt-0.5"></i>
-                <span>Align with Qatar National Vision 2030 development goals.</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Service 2: Audit & Assurance -->
-          <div class="group bg-navy-light/10 backdrop-blur-md border border-white/5 p-6 rounded-2xl hover:border-brandBlue/30 hover:bg-navy-light/20 transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-brandBlue/5">
-            <div class="flex items-center justify-between mb-4">
-              <div class="w-12 h-12 rounded-xl bg-brandBlue/10 flex items-center justify-center text-brandBlue group-hover:bg-brandBlue group-hover:text-white transition-all duration-300">
-                <!-- Audit Icon -->
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                </svg>
-              </div>
-              <span class="text-[10px] font-mono text-slate-500 font-bold tracking-widest group-hover:text-brandBlue-light transition-colors">SF // 02</span>
-            </div>
-            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-brandBlue-light transition-colors">Audit & Assurance</h3>
-            <ul class="space-y-2 text-xs text-slate-400 leading-relaxed">
-              <li class="flex items-start gap-2">
-                <i class="fa-solid fa-check text-brandBlue mt-0.5"></i>
-                <span>Statutory audits, internal audits, compliance audits, and financial reviews.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fa-solid fa-check text-brandBlue mt-0.5"></i>
-                <span>Ensure accuracy, transparency, and confidence for your stakeholders.</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Service 3: Commercial Taxation -->
-          <div class="group bg-navy-light/10 backdrop-blur-md border border-white/5 p-6 rounded-2xl hover:border-brandBlue/30 hover:bg-navy-light/20 transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-brandBlue/5">
-            <div class="flex items-center justify-between mb-4">
-              <div class="w-12 h-12 rounded-xl bg-brandBlue/10 flex items-center justify-center text-brandBlue group-hover:bg-brandBlue group-hover:text-white transition-all duration-300">
-                <!-- Tax Icon -->
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-              <span class="text-[10px] font-mono text-slate-500 font-bold tracking-widest group-hover:text-brandBlue-light transition-colors">SF // 03</span>
-            </div>
-            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-brandBlue-light transition-colors">Commercial Taxation</h3>
-            <p class="text-xs text-slate-400 leading-relaxed mb-1">
-              Timely assessment of tax liabilities and filing of tax returns is of paramount importance for survival of any establishment within regulatory environment.
-            </p>
-          </div>
-
-          <!-- Service 4: Financial Management Advisory -->
-          <div class="group bg-navy-light/10 backdrop-blur-md border border-white/5 p-6 rounded-2xl hover:border-brandBlue/30 hover:bg-navy-light/20 transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-brandBlue/5">
-            <div class="flex items-center justify-between mb-4">
-              <div class="w-12 h-12 rounded-xl bg-brandBlue/10 flex items-center justify-center text-brandBlue group-hover:bg-brandBlue group-hover:text-white transition-all duration-300">
-                <!-- Advisory Icon -->
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                </svg>
-              </div>
-              <span class="text-[10px] font-mono text-slate-500 font-bold tracking-widest group-hover:text-brandBlue-light transition-colors">SF // 04</span>
-            </div>
-            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-brandBlue-light transition-colors">Financial Management Advisory</h3>
-            <p class="text-xs text-slate-400 leading-relaxed mb-1">
-              Finance department needs to gather, interpret and deliver insights that can shape smarter decision-making in the organisation.
-            </p>
-          </div>
-
-          <!-- Service 5: Restructuring & Insolvency -->
-          <div class="group bg-navy-light/10 backdrop-blur-md border border-white/5 p-6 rounded-2xl hover:border-brandBlue/30 hover:bg-navy-light/20 transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-brandBlue/5">
-            <div class="flex items-center justify-between mb-4">
-              <div class="w-12 h-12 rounded-xl bg-brandBlue/10 flex items-center justify-center text-brandBlue group-hover:bg-brandBlue group-hover:text-white transition-all duration-300">
-                <!-- Restructuring Icon -->
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
-                </svg>
-              </div>
-              <span class="text-[10px] font-mono text-slate-500 font-bold tracking-widest group-hover:text-brandBlue-light transition-colors">SF // 05</span>
-            </div>
-            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-brandBlue-light transition-colors">Restructuring and Insolvency</h3>
-            <p class="text-xs text-slate-400 leading-relaxed mb-1">
-              Our Corporate Finance professionals provide a full range of financial advisory services, from acquisitions and disposals, restructuring, and insolvency.
-            </p>
-          </div>
-
-          <!-- Service 6: Accounting Services -->
-          <div class="group bg-navy-light/10 backdrop-blur-md border border-white/5 p-6 rounded-2xl hover:border-brandBlue/30 hover:bg-navy-light/20 transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-brandBlue/5">
-            <div class="flex items-center justify-between mb-4">
-              <div class="w-12 h-12 rounded-xl bg-brandBlue/10 flex items-center justify-center text-brandBlue group-hover:bg-brandBlue group-hover:text-white transition-all duration-300">
-                <!-- Accounting Icon -->
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                </svg>
-              </div>
-              <span class="text-[10px] font-mono text-slate-500 font-bold tracking-widest group-hover:text-brandBlue-light transition-colors">SF // 06</span>
-            </div>
-            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-brandBlue-light transition-colors">Accounting & Financial Reporting</h3>
-            <p class="text-xs text-slate-400 leading-relaxed mb-1">
-              We support owners and financial managers to optimise the structure of their accounting and finance functions to improve their contribution to the business.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY KRESTON SVP (Bento Grid layout - 9 Grid blocks) -->
-  <section id="why-kreston" class="py-24 bg-slate-50 relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-brandBlue-50 border border-brandBlue-100 rounded-full text-brandBlue font-bold text-xs uppercase tracking-widest">
-          Value Proposition
-        </div>
-        <h2 class="text-3xl sm:text-4xl font-black text-navy">WHY KRESTON SVP</h2>
-        <p class="text-slate-600 text-sm md:text-base leading-relaxed">
-          Understanding the needs of our clients is one of the most important objectives of the Kreston SVP team and we offer the most effective solutions to new start-ups and companies at all stages of their development. Private companies, Financial institutions, multinational corporations and a range of noncommercial organizations have already relied on the quality of the services Kreston SVP has to offer.
-        </p>
-      </div>
-
-      <!-- Bento Grid (3 Column layout for larger devices) -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-        <!-- Grid 1: Highly Qualified Professionals (Large double block) -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm md:col-span-2 flex flex-col justify-between space-y-4 hover:border-brandBlue/35 transition-all">
-          <div class="space-y-2">
-            <div class="text-brandBlue font-bold text-xs uppercase tracking-widest flex items-center gap-1.5">
-              <i class="fa-solid fa-graduation-cap"></i> Team Credentials
-            </div>
-            <h3 class="text-xl font-bold text-navy">Highly Qualified Professionals</h3>
-            <p class="text-xs text-slate-500 leading-relaxed">
-              Our team consists of certified specialists globally recognized for audit excellence, offering unparalleled technical proficiency:
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-2 pt-2">
-            <span class="bg-navy text-white text-[10px] font-bold tracking-wider uppercase px-2.5 py-1.5 rounded-lg">MBAs</span>
-            <span class="bg-navy text-white text-[10px] font-bold tracking-wider uppercase px-2.5 py-1.5 rounded-lg">CAs</span>
-            <span class="bg-navy text-white text-[10px] font-bold tracking-wider uppercase px-2.5 py-1.5 rounded-lg">CPAs (USA)</span>
-            <span class="bg-navy text-white text-[10px] font-bold tracking-wider uppercase px-2.5 py-1.5 rounded-lg">ACCAs (UK)</span>
-            <span class="bg-navy text-white text-[10px] font-bold tracking-wider uppercase px-2.5 py-1.5 rounded-lg">CMAs (USA)</span>
-            <span class="bg-navy text-white text-[10px] font-bold tracking-wider uppercase px-2.5 py-1.5 rounded-lg">CGMAs (UK)</span>
-            <span class="bg-navy text-white text-[10px] font-bold tracking-wider uppercase px-2.5 py-1.5 rounded-lg">CIAs (USA)</span>
-          </div>
-        </div>
-
-        <!-- Grid 2: Independent Perspective -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between space-y-3 hover:border-brandBlue/35 transition-all">
-          <div class="w-10 h-10 rounded-lg bg-brandBlue-50 flex items-center justify-center text-brandBlue">
-            <i class="fa-solid fa-scale-balanced text-sm"></i>
-          </div>
-          <div>
-            <h3 class="text-sm font-bold text-navy mb-1.5">Independent Perspective</h3>
-            <p class="text-[11px] text-slate-500 leading-relaxed">
-              We bring the independence as a trusted audit firm. We have a different perspective than a traditional firm.
-            </p>
-          </div>
-        </div>
-
-        <!-- Grid 3: Deep Industry Experience -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between space-y-3 hover:border-brandBlue/35 transition-all">
-          <div class="w-10 h-10 rounded-lg bg-brandBlue-50 flex items-center justify-center text-brandBlue">
-            <i class="fa-solid fa-briefcase text-sm"></i>
-          </div>
-          <div>
-            <h3 class="text-sm font-bold text-navy mb-1.5">Deep Industry Experience</h3>
-            <p class="text-[11px] text-slate-500 leading-relaxed">
-              Kreston SVP turn strategic insights into operational realities by bringing a mix of strategic, functional and technical professionals.
-            </p>
-          </div>
-        </div>
-
-        <!-- Grid 4: Extensive Capabilities -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between space-y-3 hover:border-brandBlue/35 transition-all">
-          <div class="w-10 h-10 rounded-lg bg-brandBlue-50 flex items-center justify-center text-brandBlue">
-            <i class="fa-solid fa-chart-line text-sm"></i>
-          </div>
-          <div>
-            <h3 class="text-sm font-bold text-navy mb-1.5">Extensive Capabilities</h3>
-            <p class="text-[11px] text-slate-500 leading-relaxed">
-              Our team has several years of experience in various industries coupled with extensive experience in public practice.
-            </p>
-          </div>
-        </div>
-
-        <!-- Grid 5: International Affiliation -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between space-y-3 hover:border-brandBlue/35 transition-all">
-          <div class="w-10 h-10 rounded-lg bg-brandBlue-50 flex items-center justify-center text-brandBlue">
-            <i class="fa-solid fa-globe text-sm"></i>
-          </div>
-          <div>
-            <h3 class="text-sm font-bold text-navy mb-1.5">International Affiliation</h3>
-            <p class="text-[11px] text-slate-500 leading-relaxed">
-              Being part of Kreston International, our clients can benefit from our international exposure.
-            </p>
-          </div>
-        </div>
-
-        <!-- Grid 6: Local Expertise -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between space-y-3 hover:border-brandBlue/35 transition-all">
-          <div class="w-10 h-10 rounded-lg bg-brandBlue-50 flex items-center justify-center text-brandBlue">
-            <i class="fa-solid fa-map-pin text-sm"></i>
-          </div>
-          <div>
-            <h3 class="text-sm font-bold text-navy mb-1.5">Local Expertise</h3>
-            <p class="text-[11px] text-slate-500 leading-relaxed">
-              We use creative analysis and industry experience to ground our insights in short time frames that reflects in our services.
-            </p>
-          </div>
-        </div>
-
-        <!-- Grid 7: Practical Approach -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between space-y-3 hover:border-brandBlue/35 transition-all">
-          <div class="w-10 h-10 rounded-lg bg-brandBlue-50 flex items-center justify-center text-brandBlue">
-            <i class="fa-solid fa-gears text-sm"></i>
-          </div>
-          <div>
-            <h3 class="text-sm font-bold text-navy mb-1.5">Practical Approach</h3>
-            <p class="text-[11px] text-slate-500 leading-relaxed">
-              Our 25+ member local team is expert in local regulations, systems and practices that enable our clients enjoy outstanding services. We also have access to expert members of our global network to provide specialized services.
-            </p>
-          </div>
-        </div>
-
-        <!-- Grid 8: Rigor in Approach -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between space-y-3 hover:border-brandBlue/35 transition-all">
-          <div class="w-10 h-10 rounded-lg bg-brandBlue-50 flex items-center justify-center text-brandBlue">
-            <i class="fa-solid fa-clipboard-check text-sm"></i>
-          </div>
-          <div>
-            <h3 class="text-sm font-bold text-navy mb-1.5">Rigor in Approach</h3>
-            <p class="text-[11px] text-slate-500 leading-relaxed">
-              We use creative analysis and industry experience to ground our insights in short time frames that reflects in our services.
-            </p>
-          </div>
-        </div>
-
-        <!-- Grid 9: Acceptance & Affordability -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between space-y-3 hover:border-brandBlue/35 transition-all">
-          <div class="w-10 h-10 rounded-lg bg-brandBlue-50 flex items-center justify-center text-brandBlue">
-            <i class="fa-solid fa-piggy-bank text-sm"></i>
-          </div>
-          <div>
-            <h3 class="text-sm font-bold text-navy mb-1.5">Acceptance & Affordability</h3>
-            <p class="text-[11px] text-slate-500 leading-relaxed">
-              Approved auditor as per QDB, QCB, and various commercial & Islamic banks in Qatar. Our aim is to provide best class services without creating much financial burden.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- VALUES & UN SDGs SECTION (Sleek dark gradient container) -->
-  <section id="values" class="bg-navy-950 text-white py-24 relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        <!-- Left Side: Values (7 Columns) -->
-        <div class="lg:col-span-7 space-y-8">
-          <div class="space-y-3">
-            <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-brandBlue/10 border border-brandBlue/20 rounded-full text-brandBlue-light font-bold text-xs uppercase tracking-widest">
-              Core Beliefs
-            </div>
-            <h2 class="text-3xl sm:text-4xl font-black text-white">Our Values</h2>
-            <p class="text-slate-400 text-xs sm:text-sm max-w-xl">
-              Kreston SVP deals with information free of distortions, personal bias, and conflicts of interest. We believe in exceeding customer expectations by ensuring full commitment to each engagement.
-            </p>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Left Column: Premium Architectural Boardroom Image with Floating Stat Badge -->
+        <div class="lg:col-span-6 relative flex justify-center py-6">
+          <!-- Main Image Card -->
+          <div
+            class="relative overflow-hidden rounded-3xl shadow-2xl border border-white/10 w-full max-w-[500px] aspect-[4/3] lg:aspect-[16/11]">
+            <img
+              src="https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Kreston Menon Executive Corporate Office"
+              class="w-full h-full object-cover object-center hover:scale-105 transition-all duration-700" />
+            <!-- Glassmorphic Overlay Gradient -->
+            <div class="absolute inset-0 bg-gradient-to-t from-[#061f2d]/50 via-transparent to-transparent"></div>
           </div>
 
-          <!-- Value Grid -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <!-- Trust Card -->
-            <div class="bg-navy-light/10 border border-white/5 rounded-xl p-5 hover:border-brandBlue/30 hover:bg-navy-light/20 transition-all duration-300">
-              <h4 class="font-bold text-brandBlue-light text-sm mb-1.5 flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span> Trust
-              </h4>
-              <p class="text-xs text-slate-400 leading-relaxed">
-                Free of distortions, personal bias, and conflicts of interest in every client auditing procedure.
-              </p>
-            </div>
-
-            <!-- Quality Card -->
-            <div class="bg-navy-light/10 border border-white/5 rounded-xl p-5 hover:border-brandBlue/30 hover:bg-navy-light/20 transition-all duration-300">
-              <h4 class="font-bold text-brandBlue-light text-sm mb-1.5 flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span> Quality
-              </h4>
-              <p class="text-xs text-slate-400 leading-relaxed">
-                Exceeding customer expectations and ensuring full commitment to each engagement regardless of size.
-              </p>
-            </div>
-
-            <!-- Responsiveness Card -->
-            <div class="bg-navy-light/10 border border-white/5 rounded-xl p-5 hover:border-brandBlue/30 hover:bg-navy-light/20 transition-all duration-300">
-              <h4 class="font-bold text-brandBlue-light text-sm mb-1.5 flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span> Responsiveness
-              </h4>
-              <p class="text-xs text-slate-400 leading-relaxed">
-                Competent advice by correct personnel. Client enquiries are answered at the shortest span of time.
-              </p>
-            </div>
-
-            <!-- Integrity Card -->
-            <div class="bg-navy-light/10 border border-white/5 rounded-xl p-5 hover:border-brandBlue/30 hover:bg-navy-light/20 transition-all duration-300">
-              <h4 class="font-bold text-brandBlue-light text-sm mb-1.5 flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span> Integrity
-              </h4>
-              <p class="text-xs text-slate-400 leading-relaxed">
-                Operating with uncompromising ethical standards, complete transparency, and regulatory precision.
-              </p>
-            </div>
-
-            <!-- Collaboration Card (Full span on desktop / flex) -->
-            <div class="bg-navy-light/10 border border-white/5 rounded-xl p-5 hover:border-brandBlue/30 hover:bg-navy-light/20 transition-all duration-300 sm:col-span-2">
-              <h4 class="font-bold text-brandBlue-light text-sm mb-1.5 flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span> Collaboration
-              </h4>
-              <p class="text-xs text-slate-400 leading-relaxed">
-                Working hand in hand with clients and Kreston Global network offices to support growth objectives.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Side: UN SDGs (5 Columns) -->
-        <div class="lg:col-span-5 bg-navy-light/10 border border-white/5 rounded-3xl p-8 flex flex-col justify-between space-y-6">
-          <div class="space-y-3">
-            <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-brandBlue/10 border border-brandBlue/20 rounded-full text-brandBlue-light font-bold text-xs uppercase tracking-widest">
-              Social Impact
-            </div>
-            <h3 class="text-xl font-bold text-white">Kreston SVP Sustainable Goals</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">
-              Kreston supports the UN Sustainable Development Goals programme, incorporating environmental and social governance into our operating principles.
-            </p>
-          </div>
-
-          <!-- UN goals grids (Using official colors as permitted for standard UN badges) -->
-          <div class="grid grid-cols-2 gap-3.5 pt-2">
-            <!-- Goal 3 -->
-            <div class="bg-[#2a9d8f] text-white p-3.5 rounded-xl shadow-sm flex flex-col justify-between aspect-square hover:scale-[1.03] transition-all duration-200">
-              <span class="text-2xl font-black">3</span>
-              <span class="text-[10px] font-bold uppercase tracking-wider leading-tight">Good Health & Well-being</span>
-            </div>
-            <!-- Goal 4 -->
-            <div class="bg-[#e76f51] text-white p-3.5 rounded-xl shadow-sm flex flex-col justify-between aspect-square hover:scale-[1.03] transition-all duration-200">
-              <span class="text-2xl font-black">4</span>
-              <span class="text-[10px] font-bold uppercase tracking-wider leading-tight">Quality Education</span>
-            </div>
-            <!-- Goal 8 -->
-            <div class="bg-[#a8dadc] text-navy p-3.5 rounded-xl shadow-sm flex flex-col justify-between aspect-square hover:scale-[1.03] transition-all duration-200">
-              <span class="text-2xl font-black text-navy">8</span>
-              <span class="text-[10px] font-bold uppercase tracking-wider leading-tight">Decent Work & Economic Growth</span>
-            </div>
-            <!-- Goal 12 -->
-            <div class="bg-[#f4a261] text-navy p-3.5 rounded-xl shadow-sm flex flex-col justify-between aspect-square hover:scale-[1.03] transition-all duration-200">
-              <span class="text-2xl font-black text-navy">12</span>
-              <span class="text-[10px] font-bold uppercase tracking-wider leading-tight">Responsible Consumption</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CLIENT REVIEWS / TESTIMONIALS -->
-  <section id="reviews" class="py-24 bg-white relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        <!-- Left column: Google Reviews Summary Widget -->
-        <div class="lg:col-span-4 space-y-6">
-          <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-brandBlue-50 border border-brandBlue-100 rounded-full text-brandBlue font-bold text-xs uppercase tracking-widest">
-            Client Feedback
-          </div>
-          <h2 class="text-3xl font-black text-navy leading-tight">
-            Our Clients Talk About Us
-          </h2>
-          <p class="text-slate-500 text-xs sm:text-sm leading-relaxed">
-            Discover why business leaders and finance managers in Doha trust Kreston SVP Chartered Accountants with their statutory auditing and tax advisory.
-          </p>
-
-          <!-- Google Review Widget (All Blue Star theme, zero yellow) -->
-          <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 space-y-4">
+          <!-- Floating Glassmorphic Stat Badge -->
+          <div
+            class="absolute bottom-0 right-0 sm:right-6 lg:-right-4 bg-brandBlue/95 border border-white/20 text-white p-5 rounded-2xl shadow-2xl z-20 max-w-[220px] sm:max-w-[240px] animate-float">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-brandBlue-50 flex items-center justify-center text-brandBlue">
-                <i class="fa-brands fa-google text-lg"></i>
+              <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white">
+                <i class="fa-solid fa-star-of-david text-lg"></i>
               </div>
               <div>
-                <h4 class="font-bold text-navy text-sm">Google Review Summary</h4>
-                <p class="text-[10px] text-slate-400">Powered by Google Maps</p>
+                <h4 class="text-lg font-black text-[#ebd6b0]">32+ Years</h4>
+                <p class="text-[9px] text-blue-100 font-bold uppercase tracking-wider">Serving UAE Businesses</p>
               </div>
-            </div>
-            <div class="flex items-baseline gap-2">
-              <span class="text-4xl font-black text-navy">4.8</span>
-              <span class="text-xs text-slate-500">Based on 28 reviews</span>
-            </div>
-            <!-- Blue Stars -->
-            <div class="flex gap-1 text-brandBlue">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <!-- Profile circles of reviewers -->
-            <div class="pt-2 flex items-center gap-1.5 border-t border-slate-200/60">
-              <div class="flex -space-x-2.5 overflow-hidden">
-                <span class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-slate-200 text-slate-700 text-[8px] font-bold text-center leading-6 uppercase" title="sharath s puthenparampan">SS</span>
-                <span class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-slate-300 text-slate-800 text-[8px] font-bold text-center leading-6 uppercase" title="Riffath bishry">RB</span>
-                <span class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-slate-400 text-slate-800 text-[8px] font-bold text-center leading-6 uppercase" title="Saleem Ahmad">SA</span>
-                <span class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-slate-200 text-slate-700 text-[8px] font-bold text-center leading-6 uppercase" title="NANDHAKUMAR J">NJ</span>
-                <span class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-slate-300 text-slate-800 text-[8px] font-bold text-center leading-6 uppercase" title="niyas basheer">NB</span>
-                <span class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-slate-400 text-slate-800 text-[8px] font-bold text-center leading-6 uppercase" title="Noushad Purayil">NP</span>
-              </div>
-              <span class="text-[9px] font-bold text-slate-400 uppercase tracking-wider">Top Contributors</span>
             </div>
           </div>
         </div>
 
-        <!-- Right column: Slider/Carousel of detailed reviews (Vanilla Javascript Slider) -->
-        <div class="lg:col-span-8 relative">
-          <div class="overflow-hidden w-full relative">
-            <div id="testimonial-slider" class="flex transition-transform duration-500 ease-in-out">
+        <!-- Right Column: Experience Description & Stats with Badges -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-[#00a3e0]">
+            <span class="w-2 h-2 rounded-full bg-[#00a3e0]"></span>
+            Who We Are
+          </div>
+          <h2 class="text-3xl lg:text-4xl font-black text-white uppercase leading-tight">
+            About Kreston Menon
+          </h2>
+          <p class="text-slate-300 text-sm leading-relaxed font-light">
+            Our multidisciplinary expertise covers banking, oil & gas, logistics, real estate, and retail. We offer the
+            comprehensive capabilities of a major international advisory firm, backed by the responsive touch and focus
+            of local partners.
+          </p>
 
-              <!-- Slide 1 -->
-              <div class="w-full flex-shrink-0 px-2">
-                <div class="bg-slate-50 border border-slate-100 rounded-3xl p-8 md:p-10 space-y-6 flex flex-col justify-between min-h-[350px]">
-                  <p class="text-slate-600 text-xs sm:text-sm leading-relaxed italic">
-                    "Kreston SVP Chartered Accountants and their long serving staff are a fantastic support to SMEs. They speak in a language understandable to everyone while taking a common-sense approach, ensuring you have the best possible understanding and knowledge, which they are more than willing to share about accounting for your business. We work very closely with them to assist in bridging the gap, ensuring an elated relationship all-round. They are markedly boutique in their approach, however very practical in the results they deliver. Eyes on Business are associated with many of their clients and have built a professional relationship over the last 5 years. We even embrace them as our external accountant and business advisor."
-                  </p>
-                  <div class="flex items-center gap-3 pt-4 border-t border-slate-200/60">
-                    <div class="w-10 h-10 rounded-full bg-brandBlue text-white flex items-center justify-center font-bold text-xs uppercase">
-                      AC
-                    </div>
-                    <div>
-                      <h4 class="font-bold text-navy text-sm">Ashraf Chakkarath</h4>
-                      <p class="text-[10px] text-slate-400 uppercase font-semibold">Managing Director, Energy Technical Services</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <!-- Core Presence Checklist -->
+          <div class="grid grid-cols-2 gap-3 text-xs font-semibold text-slate-200 pt-2">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brandBlue text-sm"></i>
+              Dubai Mainland</span>
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brandBlue text-sm"></i>
+              Jebel Ali Free Zone</span>
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brandBlue text-sm"></i> DMCC
+              Free Zone</span>
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brandBlue text-sm"></i> Abu
+              Dhabi Mainland</span>
+          </div>
 
-              <!-- Slide 2 -->
-              <div class="w-full flex-shrink-0 px-2">
-                <div class="bg-slate-50 border border-slate-100 rounded-3xl p-8 md:p-10 space-y-6 flex flex-col justify-between min-h-[350px]">
-                  <p class="text-slate-600 text-xs sm:text-sm leading-relaxed italic">
-                    "Kreston SVP Chartered Accountants is a wonderful accounting & auditing firm. This is the first accounting firm I have had where they are genuinely interested in the success of our business. The firm offers consistency. This is important to us. They understand legislation and the impacts on our business. Kreston SVP is very diligent and professional firm of Chartered Accountants. The team works in collaboration with our staff. The contact partner is responsive to our needs and through his proactive advice, the firm has certainly helped our organisation be more efficient. Their experience in working with a wide range of entities has given them an understanding of the nuances of the day-to-day work in our diversified businesses. SVP’s team are friendly, helpful, & well-organized group of people. They always treat their clients with care and the up most respect. I would highly recommend this firm to anyone looking for a great accountancy firm."
-                  </p>
-                  <div class="flex items-center gap-3 pt-4 border-t border-slate-200/60">
-                    <div class="w-10 h-10 rounded-full bg-brandBlue text-white flex items-center justify-center font-bold text-xs uppercase">
-                      SP
-                    </div>
-                    <div>
-                      <h4 class="font-bold text-navy text-sm">Sameer Parkar</h4>
-                      <p class="text-[10px] text-slate-400 uppercase font-semibold">Finance Manager, Salam Holding</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <!-- Credential Badges Layout (Displays the 3 official tags requested) -->
+          <div class="flex flex-wrap items-center gap-6 pt-6 border-t border-white/10">
+            <img
+              src="https://krestonmenon.com/storage/uploads/home-cms/ca1e8328-1238-4a52-9c16-50966d166153_32-years-4.png"
+              alt="32 Years Tag"
+              class="h-16 lg:h-20 w-auto object-contain hover:scale-105 transition duration-300 filter brightness-110" />
+            <img src="https://www.krestonmenon.com/build/assets/bl-star-BzO9TIIk.png" alt="Rank 3 in UAE"
+              class="h-16 lg:h-20 w-auto object-contain hover:scale-105 transition duration-300 filter brightness-110" />
+            <img src="https://krestonmenon.com/storage/uploads/home-cms/awards(1).png" alt="Superbrands UAE Council"
+              class="h-16 lg:h-20 w-auto object-contain hover:scale-105 transition duration-300 filter brightness-110" />
 
-              <!-- Slide 3 -->
-              <div class="w-full flex-shrink-0 px-2">
-                <div class="bg-slate-50 border border-slate-100 rounded-3xl p-8 md:p-10 space-y-6 flex flex-col justify-between min-h-[350px]">
-                  <p class="text-slate-600 text-xs sm:text-sm leading-relaxed italic">
-                    "We have been working with Kreston SVP Chartered Accountants for some time now and see them as a valued partner of our business. We have received great quality advice and professional guidance. For these reasons, I highly recommend their services. Kreston SVP provides a proactive accounting service, and they care about doing a great job. There is an increasing dilemma where small to medium sized businesses simply aren't important enough on the client register of the big accountancy firms to warrant the personal and skilled attention still available at Kreston SVP. They have a broad range of knowledge and experience in house which doesn't often exist in big accountancy firms (in my view), and yet still have the capacity to engage specialists when necessary. It's the perfect arrangement. Our experience with them has endured for over 4 years. They know our business needs and exceed our expectations. They have a great accounting team."
-                  </p>
-                  <div class="flex items-center gap-3 pt-4 border-t border-slate-200/60">
-                    <div class="w-10 h-10 rounded-full bg-brandBlue text-white flex items-center justify-center font-bold text-xs uppercase">
-                      SE
-                    </div>
-                    <div>
-                      <h4 class="font-bold text-navy text-sm">Stephan Eberle</h4>
-                      <p class="text-[10px] text-slate-400 uppercase font-semibold">Managing Director, Pfeifer Structures L.L.C</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 4: Google Review regarding audit submissions and penalty resolution -->
-              <div class="w-full flex-shrink-0 px-2">
-                <div class="bg-slate-50 border border-slate-100 rounded-3xl p-8 md:p-10 space-y-6 flex flex-col justify-between min-h-[350px]">
-                  <p class="text-slate-600 text-xs sm:text-sm leading-relaxed italic">
-                    "Previously, our company experienced issues related to audit submissions which unfortunately resulted in penalties. After a thorough review, it was clarified that the situation arose due to an error by a former employee, without the knowledge of the company management. I would like to sincerely acknowledge and appreciate the company owner for personally stepping in, taking responsibility, and providing strong support to resolve the matter professionally and efficiently. The issue has now been fully settled, and I value the cooperation and commitment shown towards maintaining professional standards. Wishing the team continued success."
-                  </p>
-                  <div class="flex items-center gap-3 pt-4 border-t border-slate-200/60">
-                    <div class="w-10 h-10 rounded-full bg-navy text-white flex items-center justify-center font-bold text-xs uppercase">
-                      GR
-                    </div>
-                    <div>
-                      <h4 class="font-bold text-navy text-sm">Google Review Contributor</h4>
-                      <p class="text-[10px] text-slate-400 uppercase font-semibold">Verified Client Google Review</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+            <div class="flex items-center gap-2 border-l border-white/20 pl-4">
+              <span class="text-3xl font-black text-brandBlue">250+</span>
+              <span class="text-[9px] font-bold text-slate-450 uppercase tracking-wider leading-tight">Experts<br />in
+                UAE</span>
             </div>
           </div>
 
-          <!-- Slider Controls -->
-          <div class="flex justify-between items-center mt-6 px-2">
-            <div class="flex gap-2">
-              <button onclick="slideTestimonial(-1)" class="w-10 h-10 rounded-full border border-slate-200 bg-white hover:border-brandBlue hover:text-brandBlue flex items-center justify-center transition" aria-label="Previous Review">
-                <i class="fa-solid fa-chevron-left text-xs"></i>
-              </button>
-              <button onclick="slideTestimonial(1)" class="w-10 h-10 rounded-full border border-slate-200 bg-white hover:border-brandBlue hover:text-brandBlue flex items-center justify-center transition" aria-label="Next Review">
-                <i class="fa-solid fa-chevron-right text-xs"></i>
-              </button>
-            </div>
-            <!-- Slider Dots indicators -->
-            <div class="flex gap-1.5" id="testimonial-dots">
-              <button onclick="setTestimonialSlide(0)" class="w-2 h-2 rounded-full bg-brandBlue transition-all duration-300" aria-label="Slide 1"></button>
-              <button onclick="setTestimonialSlide(1)" class="w-2 h-2 rounded-full bg-slate-300 transition-all duration-300" aria-label="Slide 2"></button>
-              <button onclick="setTestimonialSlide(2)" class="w-2 h-2 rounded-full bg-slate-300 transition-all duration-300" aria-label="Slide 3"></button>
-              <button onclick="setTestimonialSlide(3)" class="w-2 h-2 rounded-full bg-slate-300 transition-all duration-300" aria-label="Slide 4"></button>
+          <div class="pt-2">
+            <a href="#contact"
+              class="inline-flex items-center justify-center bg-brandBlue hover:bg-brandBlue-dark text-white px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition shadow-md hover:-translate-y-0.5 shadow-brandBlue/10 hover:shadow-lg">
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KRESTON GLOBAL STATS BAR (Matches Layout in Screenshot) -->
+  <section class="w-full bg-[#f1f5f9] py-8 border-y border-slate-200 overflow-hidden relative">
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row justify-between items-center gap-8 relative z-10">
+
+      <!-- Stats text -->
+      <div class="space-y-4 w-full lg:w-2/3">
+        <h3 class="text-xl sm:text-2xl font-black text-navy uppercase">
+          Kreston Menon is a Member of Kreston Global
+        </h3>
+
+        <!-- Grid list -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-2">
+          <div>
+            <h4 class="text-3xl font-black text-brandBlue">21+</h4>
+            <p class="text-[10px] text-slate-500 font-bold uppercase tracking-wider mt-1">Years Association</p>
+          </div>
+          <div>
+            <h4 class="text-3xl font-black text-brandBlue">14+</h4>
+            <p class="text-[10px] text-slate-500 font-bold uppercase tracking-wider mt-1">Offices in UAE</p>
+          </div>
+          <div>
+            <h4 class="text-3xl font-black text-brandBlue">4200+</h4>
+            <p class="text-[10px] text-slate-500 font-bold uppercase tracking-wider mt-1">Dedicated Professionals</p>
+          </div>
+          <div>
+            <h4 class="text-3xl font-black text-brandBlue">7+</h4>
+            <p class="text-[10px] text-slate-500 font-bold uppercase tracking-wider mt-1">Partners & Directors</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cut-out illustration image -->
+      <div class="hidden lg:block w-1/3 relative h-40">
+        <img src="https://krestonmenon.com/storage/uploads/home-cms/stats-banner(1).webp" alt="Executive woman cutout"
+          class="absolute bottom-[-32px] right-0 h-48 w-auto object-contain object-bottom mix-blend-multiply" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- KRESTON GLOBAL & Boardroom play video -->
+  <section class="py-20 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+        <!-- Text details -->
+        <div class="lg:col-span-7 space-y-4">
+          <h2 class="text-2xl sm:text-3xl font-black text-navy uppercase leading-tight">
+            Kreston Menon is Part of Kreston Global. A Network of 160 Firms.
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            As a cohesive network of independent audit firms, Kreston Global operates internationally, aligning standard
+            accounting processes with local cross-border expertise.
+          </p>
+          <ul class="space-y-2 pt-2 text-xs font-semibold text-slate-600">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brandBlue"></i> 120+ Countries
+              globally with standard service qualities.</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brandBlue"></i> Direct support in
+              cross-border trade transactions.</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brandBlue"></i> Global business
+              structuring compliance standards.</li>
+          </ul>
+        </div>
+
+        <!-- Video Play card -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative group cursor-pointer overflow-hidden rounded-2xl shadow-xl w-full max-w-[400px]">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80"
+              alt="Video presentation"
+              class="w-full h-[250px] object-cover group-hover:scale-105 transition-all duration-500" />
+            <div class="absolute inset-0 bg-navy/20 flex items-center justify-center">
+              <div
+                class="w-16 h-16 rounded-full bg-brandBlue text-white flex items-center justify-center shadow-lg relative z-10 group-hover:scale-110 transition-all duration-300">
+                <i class="fa-solid fa-play text-xl ml-1"></i>
+                <div class="absolute inset-0 rounded-full bg-brandBlue/40 animate-ping"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -1041,343 +713,641 @@
     </div>
   </section>
 
-  <!-- LATEST NEWS / ARTICLES ("What Is New About Us") -->
-  <section id="latest-news" class="py-24 bg-slate-50 relative overflow-hidden">
+  <!-- DUAL BANNER CARDS -->
+  <section class="py-10 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Card 1: Our Services -->
+      <div class="bg-navy rounded-3xl p-8 text-white relative overflow-hidden shadow-lg group">
+        <div class="absolute inset-0 bg-gradient-to-r from-navy via-navy/80 to-transparent z-10"></div>
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400&q=80"
+          alt="Our Services bg" class="absolute inset-0 w-full h-full object-cover opacity-20" />
+        <div class="relative z-20 space-y-4">
+          <h3 class="text-2xl font-black uppercase">Our Services</h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-sm">
+            We deliver independent financial audits, VAT assessments, and company registration support in mainland and
+            free zones.
+          </p>
+          <a href="#services-grid"
+            class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:border-brandBlue hover:text-brandBlue transition-colors">
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2: Kreston Global -->
+      <div class="bg-brandBlue rounded-3xl p-8 text-white relative overflow-hidden shadow-lg group">
+        <div class="absolute inset-0 bg-gradient-to-r from-brandBlue via-brandBlue/80 to-transparent z-10"></div>
+        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=400&q=80"
+          alt="Kreston Global bg" class="absolute inset-0 w-full h-full object-cover opacity-20" />
+        <div class="relative z-20 space-y-4">
+          <h3 class="text-2xl font-black uppercase">Kreston Global</h3>
+          <p class="text-blue-50 text-xs sm:text-sm leading-relaxed max-w-sm">
+            Connecting our UAE partners to the resources and support capabilities of independent member firms in 120+
+            countries.
+          </p>
+          <a href="#why-kreston"
+            class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-brandBlue transition-all">
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- KRESTON MENON UPDATES (Blog grid layout) -->
+  <section id="resources-section" class="py-24 bg-white relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 gap-4">
-        <div class="space-y-3">
-          <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-brandBlue-50 border border-brandBlue-100 rounded-full text-brandBlue font-bold text-xs uppercase tracking-widest">
-            Latest Insights
-          </div>
-          <h2 class="text-3xl font-black text-navy">What Is New About Us</h2>
+        <div class="space-y-2">
+          <span
+            class="inline-flex items-center gap-1.5 px-3 py-1 bg-brandBlue/10 border border-brandBlue/20 rounded-full text-brandBlue font-bold text-xs uppercase tracking-widest">
+            Insights
+          </span>
+          <h2 class="text-3xl font-black text-navy uppercase">Kreston Menon Updates</h2>
         </div>
-        <a href="#contact" class="text-xs font-bold text-brandBlue hover:text-brandBlue-dark uppercase tracking-wider flex items-center gap-1">
-          Subscribe to Newsletter <i class="fa-solid fa-arrow-right"></i>
+        <a href="#contact"
+          class="text-xs font-bold text-brandBlue hover:text-brandBlue-dark uppercase tracking-wider flex items-center gap-1">
+          Subscribe to Updates <i class="fa-solid fa-arrow-right"></i>
         </a>
       </div>
 
-      <!-- Articles cards list -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-        <!-- News 1 -->
-        <article class="bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:border-brandBlue/35 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
-          <div class="p-6 space-y-4">
-            <span class="text-[9px] font-bold text-brandBlue uppercase tracking-widest bg-brandBlue-50 px-2.5 py-1 rounded">What Is New</span>
-            <h3 class="text-base font-bold text-navy leading-snug hover:text-brandBlue transition-colors">
-              <a href="#">Choosing the Right ICV Certification Consultant in Qatar</a>
-            </h3>
-            <p class="text-xs text-slate-500 leading-relaxed">
-              Explore step-by-step guidelines on selecting the right consultant to optimize your company's In-Country Value score.
-            </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Update 1 -->
+        <article
+          class="bg-slate-50 border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:border-brandBlue/35 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="h-48 w-full overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=400&q=80"
+                alt="Business Cost" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6 space-y-2">
+              <span
+                class="text-[9px] font-bold text-brandBlue uppercase tracking-widest bg-brandBlue/10 px-2.5 py-1 rounded">Business
+                Guide</span>
+              <h3 class="text-base font-bold text-navy leading-snug">
+                The Cost of Doing Business in UAE
+              </h3>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Step-by-step cost analysis for setting up mainland and free zone licenses.
+              </p>
+            </div>
           </div>
-          <div class="px-6 py-4 border-t border-slate-50 flex justify-between items-center text-[10px] text-slate-400 font-semibold uppercase">
-            <span>22 June 2026</span>
-            <span>By admin</span>
-          </div>
-        </article>
-
-        <!-- News 2 -->
-        <article class="bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:border-brandBlue/35 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
-          <div class="p-6 space-y-4">
-            <span class="text-[9px] font-bold text-brandBlue uppercase tracking-widest bg-brandBlue-50 px-2.5 py-1 rounded">What Is New</span>
-            <h3 class="text-base font-bold text-navy leading-snug hover:text-brandBlue transition-colors">
-              <a href="#">Corporate Tax Return Filing in Qatar | Kreston SVP</a>
-            </h3>
-            <p class="text-xs text-slate-500 leading-relaxed">
-              Critical updates on submission timelines, documentation requirements, and avoiding penalties with the GTA.
-            </p>
-          </div>
-          <div class="px-6 py-4 border-t border-slate-50 flex justify-between items-center text-[10px] text-slate-400 font-semibold uppercase">
-            <span>12 June 2026</span>
-            <span>By admin</span>
+          <div
+            class="px-6 py-4 border-t border-slate-200/50 flex justify-between items-center text-[10px] text-slate-400 font-semibold uppercase">
+            <span>July 2026</span>
+            <a href="#" class="text-brandBlue font-bold hover:underline">Read More</a>
           </div>
         </article>
 
-        <!-- News 3 -->
-        <article class="bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:border-brandBlue/35 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
-          <div class="p-6 space-y-4">
-            <span class="text-[9px] font-bold text-brandBlue uppercase tracking-widest bg-brandBlue-50 px-2.5 py-1 rounded">What Is New</span>
-            <h3 class="text-base font-bold text-navy leading-snug hover:text-brandBlue transition-colors">
-              <a href="#">Taxation in Qatar | Complete Guide for Qatar Businesses</a>
-            </h3>
-            <p class="text-xs text-slate-500 leading-relaxed">
-              An overview of corporate tax structures, withholding tax definitions, and exemptions for corporate setups in Doha.
-            </p>
+        <!-- Update 2 -->
+        <article
+          class="bg-slate-50 border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:border-brandBlue/35 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="h-48 w-full overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=400&q=80"
+                alt="Corporate Tax" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6 space-y-2">
+              <span
+                class="text-[9px] font-bold text-brandBlue uppercase tracking-widest bg-brandBlue/10 px-2.5 py-1 rounded">Tax
+                Updates</span>
+              <h3 class="text-base font-bold text-navy leading-snug">
+                Transfer Pricing Guidelines
+              </h3>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Important compliance and documentation parameters under corporate tax.
+              </p>
+            </div>
           </div>
-          <div class="px-6 py-4 border-t border-slate-50 flex justify-between items-center text-[10px] text-slate-400 font-semibold uppercase">
-            <span>26 May 2026</span>
-            <span>By admin</span>
-          </div>
-        </article>
-
-        <!-- News 4 -->
-        <article class="bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:border-brandBlue/35 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
-          <div class="p-6 space-y-4">
-            <span class="text-[9px] font-bold text-brandBlue uppercase tracking-widest bg-brandBlue-50 px-2.5 py-1 rounded">What Is New</span>
-            <h3 class="text-base font-bold text-navy leading-snug hover:text-brandBlue transition-colors">
-              <a href="#">What Is a Feasibility Study in Qatar | A Complete Guide for Businesses</a>
-            </h3>
-            <p class="text-xs text-slate-500 leading-relaxed">
-              Evaluating local markets, capital budgets, operational risks, and regulatory approvals for commercial startups.
-            </p>
-          </div>
-          <div class="px-6 py-4 border-t border-slate-50 flex justify-between items-center text-[10px] text-slate-400 font-semibold uppercase">
-            <span>11 May 2026</span>
-            <span>By admin</span>
+          <div
+            class="px-6 py-4 border-t border-slate-200/50 flex justify-between items-center text-[10px] text-slate-400 font-semibold uppercase">
+            <span>June 2026</span>
+            <a href="#" class="text-brandBlue font-bold hover:underline">Read More</a>
           </div>
         </article>
 
-        <!-- News 5 -->
-        <article class="bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:border-brandBlue/35 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
-          <div class="p-6 space-y-4">
-            <span class="text-[9px] font-bold text-brandBlue uppercase tracking-widest bg-brandBlue-50 px-2.5 py-1 rounded">What Is New</span>
-            <h3 class="text-base font-bold text-navy leading-snug hover:text-brandBlue transition-colors">
-              <a href="#">Cash Flow Management Strategies for Businesses in Qatar</a>
-            </h3>
-            <p class="text-xs text-slate-500 leading-relaxed">
-              Essential guidelines on optimising operational cash flow, collections, and working capital limits in Qatari markets.
-            </p>
+        <!-- Update 3 -->
+        <article
+          class="bg-slate-50 border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:border-brandBlue/35 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="h-48 w-full overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400&q=80"
+                alt="Economic Substance" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6 space-y-2">
+              <span
+                class="text-[9px] font-bold text-brandBlue uppercase tracking-widest bg-brandBlue/10 px-2.5 py-1 rounded">Regulations</span>
+              <h3 class="text-base font-bold text-navy leading-snug">
+                Economic Substance regulations
+              </h3>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Summary of key economic requirements and filing schedules for local entities.
+              </p>
+            </div>
           </div>
-          <div class="px-6 py-4 border-t border-slate-50 flex justify-between items-center text-[10px] text-slate-400 font-semibold uppercase">
-            <span>22 April 2026</span>
-            <span>By admin</span>
+          <div
+            class="px-6 py-4 border-t border-slate-200/50 flex justify-between items-center text-[10px] text-slate-400 font-semibold uppercase">
+            <span>May 2026</span>
+            <a href="#" class="text-brandBlue font-bold hover:underline">Read More</a>
           </div>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQS SECTION -->
+  <section class="py-24 bg-slate-50 relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
+      <div class="text-center mb-16 space-y-4">
+        <h2 class="text-3xl font-black text-navy uppercase">FAQs</h2>
+      </div>
+
+      <!-- Accordion Grid -->
+      <div class="space-y-4 shadow-sm rounded-2xl bg-white p-6 border border-slate-100">
+        <!-- FAQ 1 -->
+        <div class="border-b border-slate-100 last:border-0 pb-4 last:pb-0">
+          <button onclick="toggleFAQ(0)"
+            class="w-full py-3 flex justify-between items-center text-left text-navy font-bold text-sm sm:text-base hover:text-brandBlue transition">
+            <span>What are the core auditing standards followed by Kreston Menon?</span>
+            <i id="faq-icon-0"
+              class="fa-solid fa-chevron-down text-xs text-brandBlue transition-transform duration-300"></i>
+          </button>
+          <div id="faq-body-0" class="hidden pt-2 pb-4 text-xs sm:text-sm text-slate-650 leading-relaxed">
+            Kreston Menon strictly conducts audits in accordance with International Standards on Auditing (ISA) and
+            International Financial Reporting Standards (IFRS), ensuring compliance with the UAE Commercial Companies
+            Law.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="border-b border-slate-100 last:border-0 pb-4 last:pb-0">
+          <button onclick="toggleFAQ(1)"
+            class="w-full py-3 flex justify-between items-center text-left text-navy font-bold text-sm sm:text-base hover:text-brandBlue transition">
+            <span>What is the process of setting up a business in UAE free zones?</span>
+            <i id="faq-icon-1"
+              class="fa-solid fa-chevron-down text-xs text-brandBlue transition-transform duration-300"></i>
+          </button>
+          <div id="faq-body-1" class="hidden pt-2 pb-4 text-xs sm:text-sm text-slate-650 leading-relaxed">
+            UAE free zone company formation involves choosing a jurisdiction (e.g., DMCC, JAFZA, Hamriyah), registering
+            the trade name, applying for the corporate activity license, and completing immigration and corporate bank
+            account arrangements. Kreston Menon manages this process end-to-end.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="border-b border-slate-100 last:border-0 pb-4 last:pb-0">
+          <button onclick="toggleFAQ(2)"
+            class="w-full py-3 flex justify-between items-center text-left text-navy font-bold text-sm sm:text-base hover:text-brandBlue transition">
+            <span>How does Kreston Menon support Corporate Tax compliance in the UAE?</span>
+            <i id="faq-icon-2"
+              class="fa-solid fa-chevron-down text-xs text-brandBlue transition-transform duration-300"></i>
+          </button>
+          <div id="faq-body-2" class="hidden pt-2 pb-4 text-xs sm:text-sm text-slate-650 leading-relaxed">
+            We provide full support including initial registration, assessing corporate structures, determining taxable
+            income thresholds, implementing transfer pricing master files, and preparing and submitting annual tax
+            returns to the FTA.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANCHES & CONTACT SECTION -->
+  <section id="contact" class="py-24 bg-white relative z-10 border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+
+        <!-- Left Column: "Our Branches" (12 Branches Layout) -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="space-y-2">
+            <h2 class="text-3xl font-black text-navy uppercase tracking-wide">Our Branches</h2>
+            <p class="text-slate-500 text-xs sm:text-sm">We have a presence in multiple cities across the UAE.</p>
+          </div>
+
+          <!-- Branches Grid (2 Columns, customized label container styling) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Dubai -->
+            <div
+              class="flex items-center bg-[#1e2d3b] rounded-lg overflow-hidden shadow-sm hover:scale-[1.01] transition-all">
+              <div class="bg-[#00a3e0] text-white px-4 py-4 flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-location-dot text-base"></i>
+              </div>
+              <div class="px-5 py-3">
+                <h4 class="font-bold text-white text-sm tracking-wide">Dubai</h4>
+              </div>
+            </div>
+            <!-- Abu Dhabi -->
+            <div
+              class="flex items-center bg-[#1e2d3b] rounded-lg overflow-hidden shadow-sm hover:scale-[1.01] transition-all">
+              <div class="bg-[#00a3e0] text-white px-4 py-4 flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-location-dot text-base"></i>
+              </div>
+              <div class="px-5 py-3">
+                <h4 class="font-bold text-white text-sm tracking-wide">Abu Dhabi</h4>
+              </div>
+            </div>
+            <!-- Sharjah -->
+            <div
+              class="flex items-center bg-[#1e2d3b] rounded-lg overflow-hidden shadow-sm hover:scale-[1.01] transition-all">
+              <div class="bg-[#00a3e0] text-white px-4 py-4 flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-location-dot text-base"></i>
+              </div>
+              <div class="px-5 py-3">
+                <h4 class="font-bold text-white text-sm tracking-wide">Sharjah</h4>
+              </div>
+            </div>
+            <!-- JAFZA -->
+            <div
+              class="flex items-center bg-[#1e2d3b] rounded-lg overflow-hidden shadow-sm hover:scale-[1.01] transition-all">
+              <div class="bg-[#00a3e0] text-white px-4 py-4 flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-location-dot text-base"></i>
+              </div>
+              <div class="px-5 py-3">
+                <h4 class="font-bold text-white text-sm tracking-wide">JAFZA</h4>
+              </div>
+            </div>
+            <!-- DAFZA -->
+            <div
+              class="flex items-center bg-[#1e2d3b] rounded-lg overflow-hidden shadow-sm hover:scale-[1.01] transition-all">
+              <div class="bg-[#00a3e0] text-white px-4 py-4 flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-location-dot text-base"></i>
+              </div>
+              <div class="px-5 py-3">
+                <h4 class="font-bold text-white text-sm tracking-wide">DAFZA</h4>
+              </div>
+            </div>
+            <!-- Ras Al Khaimah -->
+            <div
+              class="flex items-center bg-[#1e2d3b] rounded-lg overflow-hidden shadow-sm hover:scale-[1.01] transition-all">
+              <div class="bg-[#00a3e0] text-white px-4 py-4 flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-location-dot text-base"></i>
+              </div>
+              <div class="px-5 py-3">
+                <h4 class="font-bold text-white text-sm tracking-wide">Ras Al Khaimah</h4>
+              </div>
+            </div>
+            <!-- Hamriyah Free Zone -->
+            <div
+              class="flex items-center bg-[#1e2d3b] rounded-lg overflow-hidden shadow-sm hover:scale-[1.01] transition-all">
+              <div class="bg-[#00a3e0] text-white px-4 py-4 flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-location-dot text-base"></i>
+              </div>
+              <div class="px-5 py-3">
+                <h4 class="font-bold text-white text-sm tracking-wide">Hamriyah Free Zone</h4>
+              </div>
+            </div>
+            <!-- Dubai Media City -->
+            <div
+              class="flex items-center bg-[#1e2d3b] rounded-lg overflow-hidden shadow-sm hover:scale-[1.01] transition-all">
+              <div class="bg-[#00a3e0] text-white px-4 py-4 flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-location-dot text-base"></i>
+              </div>
+              <div class="px-5 py-3">
+                <h4 class="font-bold text-white text-sm tracking-wide">Dubai Media City</h4>
+              </div>
+            </div>
+            <!-- Dubai Production City -->
+            <div
+              class="flex items-center bg-[#1e2d3b] rounded-lg overflow-hidden shadow-sm hover:scale-[1.01] transition-all">
+              <div class="bg-[#00a3e0] text-white px-4 py-4 flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-location-dot text-base"></i>
+              </div>
+              <div class="px-5 py-3">
+                <h4 class="font-bold text-white text-sm tracking-wide">Dubai Production City</h4>
+              </div>
+            </div>
+            <!-- DMCC -->
+            <div
+              class="flex items-center bg-[#1e2d3b] rounded-lg overflow-hidden shadow-sm hover:scale-[1.01] transition-all">
+              <div class="bg-[#00a3e0] text-white px-4 py-4 flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-location-dot text-base"></i>
+              </div>
+              <div class="px-5 py-3">
+                <h4 class="font-bold text-white text-sm tracking-wide">DMCC</h4>
+              </div>
+            </div>
+            <!-- ADGM -->
+            <div
+              class="flex items-center bg-[#1e2d3b] rounded-lg overflow-hidden shadow-sm hover:scale-[1.01] transition-all">
+              <div class="bg-[#00a3e0] text-white px-4 py-4 flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-location-dot text-base"></i>
+              </div>
+              <div class="px-5 py-3">
+                <h4 class="font-bold text-white text-sm tracking-wide">ADGM</h4>
+              </div>
+            </div>
+            <!-- Kreston Menon FZCO -->
+            <div
+              class="flex items-center bg-[#1e2d3b] rounded-lg overflow-hidden shadow-sm hover:scale-[1.01] transition-all">
+              <div class="bg-[#00a3e0] text-white px-4 py-4 flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-location-dot text-base"></i>
+              </div>
+              <div class="px-5 py-3">
+                <h4 class="font-bold text-white text-sm tracking-wide">Kreston Menon FZCO (DMCC)</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: "Get in Touch" Form -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="space-y-2">
+            <h2 class="text-3xl font-black text-navy uppercase tracking-wide">Get in Touch</h2>
+          </div>
+
+          <form class="space-y-4" onsubmit="handleInquirySubmit(event)">
+            <!-- Full Name -->
+            <div>
+              <input type="text" id="name" required
+                class="w-full bg-slate-50 border border-slate-200 px-5 py-3.5 rounded-xl text-xs text-navy focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue"
+                placeholder="Full Name">
+            </div>
+
+            <!-- Email & Phone number with flag prefix -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <input type="email" id="email" required
+                  class="w-full bg-slate-50 border border-slate-200 px-5 py-3.5 rounded-xl text-xs text-navy focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue"
+                  placeholder="Email Address">
+              </div>
+              <div>
+                <!-- Phone input with UAE prefix selector -->
+                <div
+                  class="flex bg-slate-50 border border-slate-200 rounded-xl overflow-hidden focus-within:border-brandBlue focus-within:ring-1 focus-within:ring-brandBlue">
+                  <div
+                    class="flex items-center gap-1.5 px-3 border-r border-slate-200 text-xs font-semibold text-slate-500 bg-slate-100 flex-shrink-0">
+                    <span>🇦🇪</span>
+                    <span>+971</span>
+                    <i class="fa-solid fa-caret-down text-[9px] mt-0.5"></i>
+                  </div>
+                  <input type="tel" id="phone" required
+                    class="w-full bg-transparent px-4 py-3.5 text-xs text-navy focus:outline-none"
+                    placeholder="Phone Number">
+                </div>
+              </div>
+            </div>
+
+            <!-- Select Branch & Select Service dropdown selectors -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <select id="branch-select" required
+                  class="w-full bg-slate-50 border border-slate-200 px-5 py-3.5 rounded-xl text-xs text-slate-500 focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue">
+                  <option value="" disabled selected>Select Branch</option>
+                  <option value="Dubai">Dubai</option>
+                  <option value="Abu Dhabi">Abu Dhabi</option>
+                  <option value="Sharjah">Sharjah</option>
+                  <option value="JAFZA">JAFZA</option>
+                  <option value="DAFZA">DAFZA</option>
+                  <option value="Ras Al Khaimah">Ras Al Khaimah</option>
+                  <option value="Hamriyah Free Zone">Hamriyah Free Zone</option>
+                  <option value="Dubai Media City">Dubai Media City</option>
+                  <option value="Dubai Production City">Dubai Production City</option>
+                  <option value="DMCC">DMCC</option>
+                  <option value="ADGM">ADGM</option>
+                  <option value="Kreston Menon FZCO">Kreston Menon FZCO</option>
+                </select>
+              </div>
+              <div>
+                <select id="service-select" required
+                  class="w-full bg-slate-50 border border-slate-200 px-5 py-3.5 rounded-xl text-xs text-slate-500 focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue">
+                  <option value="" disabled selected>Select Service</option>
+                  <option value="Audit & Assurance">Audit & Assurance</option>
+                  <option value="Business Advisory">Business Advisory</option>
+                  <option value="AML Compliance">AML Compliance</option>
+                  <option value="Corporate Tax">Corporate Tax</option>
+                  <option value="ICV Certification Program">ICV Certification Program</option>
+                  <option value="Payroll Services">Payroll Services</option>
+                  <option value="Technology Consulting">Technology Consulting</option>
+                  <option value="Bookkeeping & Accounting Services">Bookkeeping & Accounting Services</option>
+                  <option value="Company Formation & Corporate Services">Company Formation & Corporate Services</option>
+                  <option value="Corporate Finance">Corporate Finance</option>
+                  <option value="Governance & Risk Management">Governance & Risk Management</option>
+                  <option value="VAT Consulting & E-Invoicing">VAT Consulting & E-Invoicing</option>
+                  <option value="Debt Advisory">Debt Advisory</option>
+                  <option value="Strategic Financial Advisory">Strategic Financial Advisory</option>
+                  <option value="Security & Cyber Resilience">Security & Cyber Resilience</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Comment textarea -->
+            <div>
+              <textarea id="message" rows="5" required
+                class="w-full bg-slate-50 border border-slate-200 px-5 py-3.5 rounded-xl text-xs text-navy focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue"
+                placeholder="Your Comment Here"></textarea>
+            </div>
+
+            <!-- Submit Button (Gradient and rounded) -->
+            <div>
+              <button type="submit"
+                class="bg-gradient-to-r from-brandBlue to-[#0084b4] hover:from-[#0084b4] hover:to-brandBlue text-white font-bold py-3.5 px-8 rounded-full transition duration-300 shadow-md text-xs uppercase tracking-widest hover:-translate-y-0.5">
+                Submit Now
+              </button>
+            </div>
+          </form>
+        </div>
 
       </div>
     </div>
   </section>
 
-  <!-- CONTACT & LOCATION SPLIT SECTION (High-contrast layout) -->
-  <section id="contact" class="flex flex-col lg:flex-row relative z-10">
-    <!-- Left side: Contact Coordinate cards & Map (Navy background) -->
-    <div class="lg:w-1/2 bg-navy-950 text-white p-8 sm:p-12 lg:p-20 flex flex-col justify-between space-y-8 relative overflow-hidden">
-      <!-- Mesh background -->
-      <div class="absolute inset-0 bg-gradient-to-br from-brandBlue/10 to-transparent pointer-events-none"></div>
-
-      <div class="space-y-6 relative z-10">
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-brandBlue/10 border border-brandBlue/20 rounded-full text-brandBlue-light font-bold text-xs uppercase tracking-widest">
-          Coordinates
-        </div>
-        <h2 class="text-3xl font-black text-white">Get In Touch With Our Experts</h2>
-        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-          Reach out to our local team in Doha for compliance advisory, statutory audits, or business setup solutions.
-        </p>
-
-        <!-- Address details -->
-        <div class="space-y-4 text-xs sm:text-sm pt-2">
-          <div class="flex items-start gap-3.5">
-            <i class="fa-solid fa-location-dot text-brandBlue-light mt-0.5"></i>
-            <div>
-              <h4 class="font-bold text-white mb-0.5">Location Address</h4>
-              <p class="text-slate-400 leading-relaxed">
-                Kreston SVP Qatar<br />
-                #406, Abdul Jaleel Abdul Ghani Business Center<br />
-                Airport Street, Near Toyota Signal<br />
-                Post Box: 82297, Doha, Qatar
-              </p>
-            </div>
-          </div>
-
-          <div class="flex items-start gap-3.5">
-            <i class="fa-solid fa-envelope text-brandBlue-light mt-0.5"></i>
-            <div>
-              <h4 class="font-bold text-white mb-0.5">Email Queries</h4>
-              <a href="mailto:info@krestonsvp.com" class="text-brandBlue-light hover:text-white transition">info@krestonsvp.com</a>
-            </div>
-          </div>
-
-          <div class="flex items-start gap-3.5">
-            <i class="fa-solid fa-square-phone text-brandBlue-light mt-0.5"></i>
-            <div>
-              <h4 class="font-bold text-white mb-0.5">Telephone Contacts</h4>
-              <p class="text-slate-400">
-                T <a href="tel:+97444694481" class="hover:text-brandBlue-light transition">+974 4469 4481</a><br />
-                F +974 4421 5470<br />
-                M <a href="tel:+97466688575" class="hover:text-brandBlue-light transition">+974 6668 8575</a>
-              </p>
-            </div>
-          </div>
-        </div>
+  <!-- GROUP ENTITIES SECTION (Custom grid with official logos provided) -->
+  <section class="py-20 bg-slate-50 border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 space-y-2">
+        <h2 class="text-2xl sm:text-3xl font-black text-navy uppercase tracking-wider">Group Entities</h2>
+        <p class="text-slate-500 text-xs sm:text-sm">Delivering specialized corporate solutions under Kreston Menon
+          branding.</p>
       </div>
 
-      <!-- Embedded Styled Google Map (Qatar Airport Street Center) -->
-      <div class="w-full h-56 rounded-2xl overflow-hidden border border-white/10 shadow-lg relative z-10">
-        <iframe class="w-full h-full grayscale opacity-80"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.2045558189855!2d51.547625!3d25.263722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c53b2be03c31%3A0xe4c3e8cd83d5f3!2sAbdul%20Jaleel%20Abdul%20Ghani%20Business%20Center!5e0!3m2!1sen!2sqa!4v1700000000000!5m2!1sen!2sqa"
-          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-
-    <!-- Right side: Inquiry Form (White/Slate background) -->
-    <div class="lg:w-1/2 bg-white p-8 sm:p-12 lg:p-20 flex flex-col justify-center border-t lg:border-t-0 lg:border-l border-slate-100">
-      <div class="space-y-6">
-        <div class="space-y-2">
-          <h3 class="text-2xl font-black text-navy">Submit an Inquiry</h3>
-          <p class="text-slate-500 text-xs sm:text-sm">We respond to all requests within 24 business hours.</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+        <!-- Entity 1 -->
+        <div
+          class="bg-white border border-slate-100 p-5 rounded-2xl flex items-center justify-center shadow-sm hover:shadow-md transition duration-300 hover:scale-[1.03] h-28">
+          <img src="https://krestonmenon.com/storage/uploads/group-entity/kreston-menon-chartered-accountants.webp"
+            alt="Kreston Menon Chartered Accountants" class="max-h-full max-w-full object-contain" />
         </div>
-
-        <form class="space-y-4" onsubmit="handleInquirySubmit(event)">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-[10px] font-bold text-navy uppercase tracking-wider mb-1.5" for="name">Your Name</label>
-              <input type="text" id="name" required
-                class="w-full border border-slate-200 px-4 py-3 rounded-xl focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue text-xs text-navy" placeholder="John Doe">
-            </div>
-            <div>
-              <label class="block text-[10px] font-bold text-navy uppercase tracking-wider mb-1.5" for="email">Email Address</label>
-              <input type="email" id="email" required
-                class="w-full border border-slate-200 px-4 py-3 rounded-xl focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue text-xs text-navy" placeholder="john@example.com">
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-[10px] font-bold text-navy uppercase tracking-wider mb-1.5" for="phone">Phone Number</label>
-              <input type="tel" id="phone" required
-                class="w-full border border-slate-200 px-4 py-3 rounded-xl focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue text-xs text-navy" placeholder="+974 5555 5555">
-            </div>
-            <div>
-              <label class="block text-[10px] font-bold text-navy uppercase tracking-wider mb-1.5" for="company">Company / Institution</label>
-              <input type="text" id="company"
-                class="w-full border border-slate-200 px-4 py-3 rounded-xl focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue text-xs text-navy" placeholder="Qatar SME LLC">
-            </div>
-          </div>
-
-          <div>
-            <label class="block text-[10px] font-bold text-navy uppercase tracking-wider mb-1.5" for="message">Message</label>
-            <textarea rows="4" id="message" required
-              class="w-full border border-slate-200 px-4 py-3 rounded-xl focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue text-xs text-navy" placeholder="Detail your financial audit or taxation requirements..."></textarea>
-          </div>
-
-          <button type="submit"
-            class="bg-brandBlue hover:bg-brandBlue-600 text-white font-bold py-3.5 px-8 rounded-xl transition duration-300 w-full shadow-lg shadow-brandBlue/15 hover:shadow-brandBlue/35 text-xs uppercase tracking-widest hover:-translate-y-0.5">
-            Submit Inquiry Proposal
-          </button>
-        </form>
+        <!-- Entity 2 -->
+        <div
+          class="bg-white border border-slate-100 p-5 rounded-2xl flex items-center justify-center shadow-sm hover:shadow-md transition duration-300 hover:scale-[1.03] h-28">
+          <img
+            src="https://krestonmenon.com/storage/uploads/group-entity/aaf5f65d-21a5-4f6b-930e-06c670e99b44_frame-56162-1.svg"
+            alt="Group Entity 2" class="max-h-full max-w-full object-contain" />
+        </div>
+        <!-- Entity 3 -->
+        <div
+          class="bg-white border border-slate-100 p-5 rounded-2xl flex items-center justify-center shadow-sm hover:shadow-md transition duration-300 hover:scale-[1.03] h-28">
+          <img
+            src="https://krestonmenon.com/storage/uploads/group-entity/009f0bd2-5d85-45b6-887a-5aa67b91cf04_frame-56160-1.svg"
+            alt="Group Entity 3" class="max-h-full max-w-full object-contain" />
+        </div>
+        <!-- Entity 4 -->
+        <div
+          class="bg-white border border-slate-100 p-5 rounded-2xl flex items-center justify-center shadow-sm hover:shadow-md transition duration-300 hover:scale-[1.03] h-28">
+          <img
+            src="https://krestonmenon.com/storage/uploads/group-entity/0688a53b-d6cf-4f4b-93d1-2ed84e79b141_frame-56158.svg"
+            alt="Group Entity 4" class="max-h-full max-w-full object-contain" />
+        </div>
+        <!-- Entity 5 -->
+        <div
+          class="bg-white border border-slate-100 p-5 rounded-2xl flex items-center justify-center shadow-sm hover:shadow-md transition duration-300 hover:scale-[1.03] h-28">
+          <img
+            src="https://krestonmenon.com/storage/uploads/group-entity/f016f7f2-dffc-449c-a464-0c5a12b7f9a0_frame-56164.svg"
+            alt="Group Entity 5" class="max-h-full max-w-full object-contain" />
+        </div>
+        <!-- Entity 6 -->
+        <div
+          class="bg-white border border-slate-100 p-5 rounded-2xl flex items-center justify-center shadow-sm hover:shadow-md transition duration-300 hover:scale-[1.03] h-28">
+          <img
+            src="https://krestonmenon.com/storage/uploads/group-entity/717500d6-228f-46cc-ab30-ea72be724909_frame-56165.svg"
+            alt="Group Entity 6" class="max-h-full max-w-full object-contain" />
+        </div>
       </div>
     </div>
   </section>
 
   <!-- DEEP CORPORATE FOOTER -->
-  <footer class="bg-navy-950 text-white pt-16 pb-8 px-4 sm:px-6 lg:px-8 border-t border-white/5 relative z-10">
+  <footer class="bg-[#0b2c3d] text-white pt-16 pb-8 px-4 sm:px-6 lg:px-8 border-t border-white/5 relative z-10">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
-      <!-- Brand Info (4 Cols) -->
+      <!-- Brand Info -->
       <div class="md:col-span-4 space-y-4">
-        <div class="flex items-center py-2">
-          <img alt="Kreston SVP Logo" class="h-12 w-auto object-contain brightness-0 invert"
-            src="https://www.krestonsvp.com/wp-content/uploads/2025/10/Untitled-2-1-scaled.png" />
-        </div>
+        <img src="https://krestonmenon.com/storage/uploads/common-cms/logo(1).svg" alt="Kreston Menon Logo"
+          class="h-14 w-auto object-contain brightness-0 invert" />
         <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
-          Knowing you. Knowing your business. Delivering audit, tax advisory, and corporate finance excellence globally and locally in Qatar.
+          Knowing you. Knowing your business. Delivering statutory audit, taxation structure advisory, and corporate
+          finance excellence across mainland UAE and free zones.
         </p>
       </div>
 
-      <!-- Quick links (3 Cols) -->
+      <!-- Quick links -->
       <div class="md:col-span-3 space-y-4">
-        <h4 class="font-bold text-xs uppercase tracking-wider text-white border-l-2 border-brandBlue pl-2.5">Quick Navigation</h4>
+        <h4 class="font-bold text-xs uppercase tracking-wider text-white border-l-2 border-brandBlue pl-2.5">Quick Links
+        </h4>
         <ul class="space-y-2 text-xs text-slate-400 font-medium">
-          <li><a href="#home" class="hover:text-brandBlue-light transition">Home Base</a></li>
-          <li><a href="#about" class="hover:text-brandBlue-light transition">About Kreston SVP</a></li>
-          <li><a href="#services" class="hover:text-brandBlue-light transition">Audit & Tax Services</a></li>
-          <li><a href="#why-kreston" class="hover:text-brandBlue-light transition">Why Choose Kreston</a></li>
-          <li><a href="#values" class="hover:text-brandBlue-light transition">Core Values</a></li>
-          <li><a href="#latest-news" class="hover:text-brandBlue-light transition">Latest Insights</a></li>
-          <li><a href="#contact" class="hover:text-brandBlue-light transition">Get In Touch</a></li>
+          <li><a href="#about" class="hover:text-brandBlue-light transition">Who We Are</a></li>
+          <li><a href="#services-grid" class="hover:text-brandBlue-light transition">Our Services</a></li>
+          <li><a href="#tabs-section" class="hover:text-brandBlue-light transition">Sectors We Serve</a></li>
+          <li><a href="#why-kreston" class="hover:text-brandBlue-light transition">Kreston Global</a></li>
+          <li><a href="#resources-section" class="hover:text-brandBlue-light transition">Publications</a></li>
+          <li><a href="#contact" class="hover:text-brandBlue-light transition">Contact Us</a></li>
         </ul>
       </div>
 
-      <!-- Services (3 Cols) -->
+      <!-- Services -->
       <div class="md:col-span-3 space-y-4">
-        <h4 class="font-bold text-xs uppercase tracking-wider text-white border-l-2 border-brandBlue pl-2.5">Services</h4>
+        <h4 class="font-bold text-xs uppercase tracking-wider text-white border-l-2 border-brandBlue pl-2.5">Auditing &
+          Tax</h4>
         <ul class="space-y-2 text-xs text-slate-400 font-medium">
-          <li><a href="#services" class="hover:text-brandBlue-light transition">In-Country Value (ICV)</a></li>
-          <li><a href="#services" class="hover:text-brandBlue-light transition">Statutory Audit</a></li>
-          <li><a href="#services" class="hover:text-brandBlue-light transition">Corporate Tax Advisory</a></li>
-          <li><a href="#services" class="hover:text-brandBlue-light transition">Financial Management</a></li>
-          <li><a href="#services" class="hover:text-brandBlue-light transition">Restructuring & Insolvency</a></li>
-          <li><a href="#services" class="hover:text-brandBlue-light transition">Accounting & Reporting</a></li>
+          <li><a href="#tabs-section" onclick="showServiceTab('tab-audit')"
+              class="hover:text-brandBlue-light transition">Audit & Assurance</a></li>
+          <li><a href="#tabs-section" onclick="showServiceTab('tab-tax')"
+              class="hover:text-brandBlue-light transition">Corporate Tax Filing</a></li>
+          <li><a href="#tabs-section" onclick="showServiceTab('tab-advisory')"
+              class="hover:text-brandBlue-light transition">Financial Advisory</a></li>
+          <li><a href="#tabs-section" onclick="showServiceTab('tab-risk')"
+              class="hover:text-brandBlue-light transition">Risk Management</a></li>
+          <li><a href="#tabs-section" onclick="showServiceTab('tab-corporate')"
+              class="hover:text-brandBlue-light transition">Corporate Secretarial</a></li>
+          <li><a href="#tabs-section" onclick="showServiceTab('tab-fdi')"
+              class="hover:text-brandBlue-light transition">UAE Business Setup</a></li>
         </ul>
       </div>
 
-      <!-- Social Media Connect (2 Cols) -->
+      <!-- Social Media Connect -->
       <div class="md:col-span-2 space-y-4">
-        <h4 class="font-bold text-xs uppercase tracking-wider text-white border-l-2 border-brandBlue pl-2.5">Get Social</h4>
+        <h4 class="font-bold text-xs uppercase tracking-wider text-white border-l-2 border-brandBlue pl-2.5">Follow Us
+        </h4>
         <div class="flex gap-3">
-          <a href="#" class="w-8 h-8 rounded-lg bg-navy-light/10 border border-white/5 flex items-center justify-center text-slate-400 hover:border-brandBlue hover:text-brandBlue-light hover:-translate-y-0.5 transition duration-300" aria-label="LinkedIn Account"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
-          <a href="#" class="w-8 h-8 rounded-lg bg-navy-light/10 border border-white/5 flex items-center justify-center text-slate-400 hover:border-brandBlue hover:text-brandBlue-light hover:-translate-y-0.5 transition duration-300" aria-label="Twitter Account"><i class="fa-brands fa-x-twitter text-xs"></i></a>
-          <a href="#" class="w-8 h-8 rounded-lg bg-navy-light/10 border border-white/5 flex items-center justify-center text-slate-400 hover:border-brandBlue hover:text-brandBlue-light hover:-translate-y-0.5 transition duration-300" aria-label="Facebook Account"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+          <a href="#"
+            class="w-8 h-8 rounded-lg bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:border-brandBlue hover:text-brandBlue-light hover:-translate-y-0.5 transition duration-300"
+            aria-label="LinkedIn Account"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+          <a href="#"
+            class="w-8 h-8 rounded-lg bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:border-brandBlue hover:text-brandBlue-light hover:-translate-y-0.5 transition duration-300"
+            aria-label="Twitter Account"><i class="fa-brands fa-x-twitter text-xs"></i></a>
+          <a href="#"
+            class="w-8 h-8 rounded-lg bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:border-brandBlue hover:text-brandBlue-light hover:-translate-y-0.5 transition duration-300"
+            aria-label="Facebook Account"><i class="fa-brands fa-facebook-f text-xs"></i></a>
         </div>
       </div>
     </div>
 
     <!-- Copyright and credit -->
-    <div class="text-center text-slate-500 text-xs border-t border-white/5 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 max-w-7xl mx-auto">
-      <span>© 2018 All rights reserved. Powered by Panache</span>
+    <div
+      class="text-center text-slate-500 text-xs border-t border-white/5 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 max-w-7xl mx-auto">
+      <span>© 2026 Kreston Menon. All rights reserved. Powered by Panache</span>
       <div class="flex gap-4">
-        <a href="#" class="hover:text-slate-350 transition">Privacy Policy</a>
-        <a href="#" class="hover:text-slate-350 transition">Terms of Service</a>
+        <a href="#" class="hover:text-slate-300 transition">Privacy Policy</a>
+        <a href="#" class="hover:text-slate-300 transition">Terms of Service</a>
       </div>
     </div>
   </footer>
 
-  <!-- SUBMIT RFP GLOWING MODAL (Vanilla JS popup modal) -->
+  <!-- SUBMIT RFP MODAL -->
   <div id="rfp-modal" class="fixed inset-0 z-[110] hidden flex items-center justify-center px-4">
     <div class="fixed inset-0 bg-navy-950/80 backdrop-blur-md" onclick="toggleRFPModal(false)"></div>
-    <div class="relative bg-white text-navy w-full max-w-lg rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100 z-10 max-h-[90vh] overflow-y-auto">
-      <button onclick="toggleRFPModal(false)" class="absolute top-4 right-4 p-2 text-slate-400 hover:text-navy hover:bg-slate-50 rounded-full transition">
+    <div
+      class="relative bg-white text-navy w-full max-w-lg rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100 z-10 max-h-[90vh] overflow-y-auto">
+      <button onclick="toggleRFPModal(false)"
+        class="absolute top-4 right-4 p-2 text-slate-400 hover:text-navy hover:bg-slate-50 rounded-full transition">
         <i class="fa-solid fa-xmark text-lg"></i>
       </button>
 
       <div class="space-y-4">
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-brandBlue-50 border border-brandBlue-100 rounded-full text-brandBlue font-bold text-xs uppercase tracking-widest">
+        <div
+          class="inline-flex items-center gap-1.5 px-3 py-1 bg-brandBlue/10 border border-brandBlue/20 rounded-full text-brandBlue font-bold text-xs uppercase tracking-widest">
           Proposal Portal
         </div>
         <h3 class="text-2xl font-black text-navy leading-tight">Submit RFP Document</h3>
         <p class="text-slate-500 text-xs leading-relaxed">
-          Please upload your Request for Proposal details and target timeline. A partner will contact you directly.
+          Please upload your Request for Proposal details. A partner will contact you directly.
         </p>
 
         <form class="space-y-4" onsubmit="handleRFPSubmit(event)">
           <div>
-            <label class="block text-[10px] font-bold text-navy uppercase tracking-wider mb-1" for="rfp-name">Contact Person</label>
+            <label class="block text-[10px] font-bold text-navy uppercase tracking-wider mb-1" for="rfp-name">Contact
+              Person</label>
             <input type="text" id="rfp-name" required
-              class="w-full border border-slate-200 px-4 py-3 rounded-xl focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue text-xs text-navy" placeholder="Enter full name">
+              class="w-full border border-slate-200 px-4 py-3 rounded-xl focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue text-xs text-navy"
+              placeholder="Enter full name">
           </div>
 
           <div>
-            <label class="block text-[10px] font-bold text-navy uppercase tracking-wider mb-1" for="rfp-email">Work Email</label>
+            <label class="block text-[10px] font-bold text-navy uppercase tracking-wider mb-1" for="rfp-email">Work
+              Email</label>
             <input type="email" id="rfp-email" required
-              class="w-full border border-slate-200 px-4 py-3 rounded-xl focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue text-xs text-navy" placeholder="name@company.com">
+              class="w-full border border-slate-200 px-4 py-3 rounded-xl focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue text-xs text-navy"
+              placeholder="name@company.com">
           </div>
 
           <div class="grid grid-cols-2 gap-4">
             <div>
-              <label class="block text-[10px] font-bold text-navy uppercase tracking-wider mb-1" for="rfp-phone">Phone Number</label>
+              <label class="block text-[10px] font-bold text-navy uppercase tracking-wider mb-1" for="rfp-phone">Phone
+                Number</label>
               <input type="tel" id="rfp-phone" required
-                class="w-full border border-slate-200 px-4 py-3 rounded-xl focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue text-xs text-navy" placeholder="+974 5555 5555">
+                class="w-full border border-slate-200 px-4 py-3 rounded-xl focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue text-xs text-navy"
+                placeholder="+971 55 555 5555">
             </div>
             <div>
-              <label class="block text-[10px] font-bold text-navy uppercase tracking-wider mb-1" for="rfp-company">Company</label>
+              <label class="block text-[10px] font-bold text-navy uppercase tracking-wider mb-1"
+                for="rfp-company">Company</label>
               <input type="text" id="rfp-company" required
-                class="w-full border border-slate-200 px-4 py-3 rounded-xl focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue text-xs text-navy" placeholder="Company LLC">
+                class="w-full border border-slate-200 px-4 py-3 rounded-xl focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue text-xs text-navy"
+                placeholder="Company LLC">
             </div>
           </div>
 
           <div>
-            <label class="block text-[10px] font-bold text-navy uppercase tracking-wider mb-1" for="rfp-details">Brief RFP Scope</label>
+            <label class="block text-[10px] font-bold text-navy uppercase tracking-wider mb-1" for="rfp-details">RFP
+              Scope</label>
             <textarea id="rfp-details" rows="3" required
-              class="w-full border border-slate-200 px-4 py-3 rounded-xl focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue text-xs text-navy" placeholder="Audit scope, tax filing timelines, etc..."></textarea>
-          </div>
-
-          <div>
-            <label class="block text-[10px] font-bold text-navy uppercase tracking-wider mb-1" for="rfp-file">RFP Document Link / Name</label>
-            <input type="text" id="rfp-file"
-              class="w-full border border-slate-200 px-4 py-3 rounded-xl focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue text-xs text-navy" placeholder="Link to document (Google Drive/Dropbox) or PDF filename">
+              class="w-full border border-slate-200 px-4 py-3 rounded-xl focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue text-xs text-navy"
+              placeholder="Audit requirements, company structure..."></textarea>
           </div>
 
           <button type="submit"
-            class="bg-brandBlue hover:bg-brandBlue-600 text-white font-bold py-3 px-8 rounded-xl transition duration-300 w-full shadow-lg shadow-brandBlue/15 hover:shadow-brandBlue/35 text-xs uppercase tracking-widest hover:-translate-y-0.5">
+            class="bg-brandBlue hover:bg-brandBlue-dark text-white font-bold py-3 px-8 rounded-xl transition duration-300 w-full shadow-lg text-xs uppercase tracking-widest hover:-translate-y-0.5">
             Submit Proposal Packet
           </button>
         </form>
@@ -1387,22 +1357,33 @@
 
   <!-- INTERACTIVE LIGHTWEIGHT VANILLA JAVASCRIPT -->
   <script>
-    // Navigation Drawer Logic
+    // Navigation Drawer Logic (Mobile with Premium transitions)
     document.addEventListener('DOMContentLoaded', () => {
       const menuToggle = document.getElementById('menu-toggle');
       const mobileDrawer = document.getElementById('mobile-drawer');
       const drawerClose = document.getElementById('drawer-close');
       const drawerOverlay = document.getElementById('drawer-overlay');
+      const drawerContent = document.getElementById('drawer-content');
       const drawerLinks = mobileDrawer.querySelectorAll('a');
 
       function openDrawer() {
         mobileDrawer.classList.remove('hidden');
         document.body.style.overflow = 'hidden';
+        setTimeout(() => {
+          drawerOverlay.classList.remove('opacity-0', 'pointer-events-none');
+          drawerOverlay.classList.add('opacity-100', 'pointer-events-auto');
+          drawerContent.classList.remove('translate-x-full');
+        }, 50);
       }
 
       function closeDrawer() {
-        mobileDrawer.classList.add('hidden');
+        drawerOverlay.classList.remove('opacity-100', 'pointer-events-auto');
+        drawerOverlay.classList.add('opacity-0', 'pointer-events-none');
+        drawerContent.classList.add('translate-x-full');
         document.body.style.overflow = '';
+        setTimeout(() => {
+          mobileDrawer.classList.add('hidden');
+        }, 300);
       }
 
       menuToggle.addEventListener('click', openDrawer);
@@ -1426,7 +1407,7 @@
     // RFP Form Submission handler
     function handleRFPSubmit(event) {
       event.preventDefault();
-      alert("Thank you! Your RFP has been successfully submitted. Our partners will contact you shortly.");
+      alert("Thank you! Your RFP details have been submitted. Our partners will contact you shortly.");
       toggleRFPModal(false);
       event.target.reset();
     }
@@ -1434,51 +1415,444 @@
     // Inquiry Form Submission handler
     function handleInquirySubmit(event) {
       event.preventDefault();
-      alert("Thank you! Your inquiry has been sent to our expert team. We will get back to you shortly.");
+      alert("Thank you! Your meeting request has been received. Our team will contact you shortly to confirm the details.");
       event.target.reset();
     }
 
-    // Testimonials Carousel Slider
-    let currentTestimonialSlideIndex = 0;
-    const sliderContainer = document.getElementById('testimonial-slider');
-    const totalSlides = 4; // Total slides listed in HTML (0 to 3)
-    const dotElements = document.getElementById('testimonial-dots').children;
+    // Service Selection and Scroll
+    function setServiceAndScroll(serviceType) {
+      // Find the button to click based on type
+      let targetBtn;
+      if (serviceType === 'audit') {
+        targetBtn = document.querySelector('button[onclick*="tab-audit"]');
+      } else if (serviceType === 'tax') {
+        targetBtn = document.querySelector('button[onclick*="tab-tax"]');
+      } else if (serviceType === 'advisory') {
+        targetBtn = document.querySelector('button[onclick*="tab-advisory"]');
+      } else if (serviceType === 'risk') {
+        targetBtn = document.querySelector('button[onclick*="tab-risk"]');
+      } else if (serviceType === 'corporate') {
+        targetBtn = document.querySelector('button[onclick*="tab-corporate"]');
+      } else if (serviceType === 'fdi') {
+        targetBtn = document.querySelector('button[onclick*="tab-fdi"]');
+      }
 
-    function updateSliderPosition() {
-      // Calculate translate percentage
-      const translatePercentage = -currentTestimonialSlideIndex * 100;
-      sliderContainer.style.transform = `translateX(${translatePercentage}%)`;
+      if (targetBtn) {
+        targetBtn.click();
+      }
+    }
 
-      // Update dot styles
-      for (let i = 0; i < dotElements.length; i++) {
-        if (i === currentTestimonialSlideIndex) {
-          dotElements[i].className = 'w-2 h-2 rounded-full bg-brandBlue transition-all duration-300';
-        } else {
-          dotElements[i].className = 'w-2 h-2 rounded-full bg-slate-300 transition-all duration-300';
+    // Interactive Services Tab Control
+    function showServiceTab(tabId) {
+      // Hide all panels
+      document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.add('hidden');
+      });
+
+      // Show requested panel
+      document.getElementById(tabId).classList.remove('hidden');
+
+      // Update button classes
+      document.querySelectorAll('.tab-button').forEach(btn => {
+        btn.classList.remove('border-brandBlue', 'text-brandBlue');
+        btn.classList.add('border-transparent', 'text-slate-500');
+      });
+
+      // Highlight current button
+      event.currentTarget.classList.remove('border-transparent', 'text-slate-500');
+      event.currentTarget.classList.add('border-brandBlue', 'text-brandBlue');
+    }
+
+    // FAQ Accordion Control
+    function toggleFAQ(index) {
+      const faqBody = document.getElementById(`faq-body-${index}`);
+      const faqIcon = document.getElementById(`faq-icon-${index}`);
+
+      if (faqBody.classList.contains('hidden')) {
+        faqBody.classList.remove('hidden');
+        faqIcon.style.transform = 'rotate(180deg)';
+      } else {
+        faqBody.classList.add('hidden');
+        faqIcon.style.transform = 'rotate(0deg)';
+      }
+    }
+    // selectServiceAndScroll Function
+    function selectServiceAndScroll(serviceName) {
+      const select = document.getElementById('service-select');
+      if (select) {
+        select.value = serviceName;
+        select.dispatchEvent(new Event('change'));
+      }
+      const contactSec = document.getElementById('contact');
+      if (contactSec) {
+        contactSec.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Chatbot Widget Toggle
+    function toggleChatbot() {
+      const chatWin = document.getElementById('chatbot-window');
+      const bubble = document.getElementById('chatbot-bubble');
+      if (bubble) {
+        bubble.classList.add('hidden'); // Hide scroll prompt bubble once chatbot is toggled
+      }
+
+      if (chatWin.classList.contains('hidden')) {
+        chatWin.classList.remove('hidden');
+        setTimeout(() => {
+          chatWin.classList.remove('translate-y-4', 'opacity-0');
+        }, 50);
+      } else {
+        chatWin.classList.add('translate-y-4', 'opacity-0');
+        setTimeout(() => {
+          chatWin.classList.add('hidden');
+        }, 300);
+      }
+    }
+
+    function appendMessage(sender, text) {
+      const messagesDiv = document.getElementById('chat-messages');
+      const msgRow = document.createElement('div');
+      msgRow.className = 'flex gap-2 ' + (sender === 'user' ? 'justify-end' : '');
+
+      const content = sender === 'user'
+        ? `<div class="bg-brandBlue text-white p-3 rounded-2xl rounded-tr-none shadow-sm max-w-[80%]">${text}</div>`
+        : `<div class="w-6 h-6 rounded-full bg-brandBlue text-white flex items-center justify-center font-bold text-[10px]">KM</div>
+           <div class="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm max-w-[80%] text-slate-700 leading-normal">${text}</div>`;
+
+      msgRow.innerHTML = content;
+      messagesDiv.appendChild(msgRow);
+      messagesDiv.scrollTop = messagesDiv.scrollHeight;
+    }
+
+    function handleChatSubmit(event) {
+      event.preventDefault();
+      const input = document.getElementById('chat-input');
+      const text = input.value.trim();
+      if (!text) return;
+
+      appendMessage('user', text);
+      input.value = '';
+
+      // Simulate reply
+      setTimeout(() => {
+        let reply = "Thank you for your message. A Kreston representative will be in touch with you shortly. For immediate assistance, you can also email us at info@krestonmenon.com.";
+        const lowText = text.toLowerCase();
+        if (lowText.includes('audit')) {
+          reply = `We offer premium Audit & Assurance services in the UAE. I have selected 'Audit & Assurance' in the main inquiry form below.
+                   <br/><button onclick="openQuickContactModal('Audit & Assurance', 'I need auditing assistance.'); toggleChatbot();" class="mt-2 inline-flex items-center gap-1.5 bg-brandBlue text-white text-[10px] px-3 py-1.5 rounded-lg font-bold uppercase tracking-wider shadow hover:bg-brandBlue-dark transition"><i class="fa-solid fa-paper-plane text-[9px]"></i> Open Quick Inquiry Popup</button>`;
+        } else if (lowText.includes('tax')) {
+          reply = `Our tax experts can assist you with registration, compliance, and filing. I have selected 'Corporate Tax' in the main inquiry form.
+                   <br/><button onclick="openQuickContactModal('Corporate Tax', 'I need corporate tax advisory.'); toggleChatbot();" class="mt-2 inline-flex items-center gap-1.5 bg-brandBlue text-white text-[10px] px-3 py-1.5 rounded-lg font-bold uppercase tracking-wider shadow hover:bg-brandBlue-dark transition"><i class="fa-solid fa-paper-plane text-[9px]"></i> Open Quick Inquiry Popup</button>`;
+        } else if (lowText.includes('setup') || lowText.includes('fdi')) {
+          reply = `We cover mainland company formation, free zones, and offshore setups. I have selected 'ICV Certification Program' in the main form.
+                   <br/><button onclick="openQuickContactModal('Company Formation & Corporate Services', 'I want to setup a new company.'); toggleChatbot();" class="mt-2 inline-flex items-center gap-1.5 bg-brandBlue text-white text-[10px] px-3 py-1.5 rounded-lg font-bold uppercase tracking-wider shadow hover:bg-brandBlue-dark transition"><i class="fa-solid fa-paper-plane text-[9px]"></i> Open Quick Inquiry Popup</button>`;
+        }
+        appendMessage('bot', reply);
+      }, 800);
+    }
+
+    function sendQuickMessage(text) {
+      appendMessage('user', text);
+      setTimeout(() => {
+        let reply = "Great! I have selected the service in the contact form below and scrolled down for you.";
+        let selectedService = '';
+        if (text === 'Book an Audit') {
+          selectedService = 'Audit & Assurance';
+          selectServiceAndScroll(selectedService);
+          reply += `<br/><button onclick="openQuickContactModal('${selectedService}', 'Inquiry for Audit services.'); toggleChatbot();" class="mt-2 inline-flex items-center gap-1.5 bg-brandBlue text-white text-[10px] px-3 py-1.5 rounded-lg font-bold uppercase tracking-wider shadow hover:bg-brandBlue-dark transition"><i class="fa-solid fa-paper-plane text-[9px]"></i> Open Quick Inquiry Popup</button>`;
+        } else if (text === 'Corporate Tax Inquiry') {
+          selectedService = 'Corporate Tax';
+          selectServiceAndScroll(selectedService);
+          reply += `<br/><button onclick="openQuickContactModal('${selectedService}', 'Inquiry for Corporate Tax services.'); toggleChatbot();" class="mt-2 inline-flex items-center gap-1.5 bg-brandBlue text-white text-[10px] px-3 py-1.5 rounded-lg font-bold uppercase tracking-wider shadow hover:bg-brandBlue-dark transition"><i class="fa-solid fa-paper-plane text-[9px]"></i> Open Quick Inquiry Popup</button>`;
+        } else if (text === 'FDI Setup') {
+          selectedService = 'ICV Certification Program';
+          selectServiceAndScroll(selectedService);
+          reply += `<br/><button onclick="openQuickContactModal('Company Formation & Corporate Services', 'Inquiry for FDI setup.'); toggleChatbot();" class="mt-2 inline-flex items-center gap-1.5 bg-brandBlue text-white text-[10px] px-3 py-1.5 rounded-lg font-bold uppercase tracking-wider shadow hover:bg-brandBlue-dark transition"><i class="fa-solid fa-paper-plane text-[9px]"></i> Open Quick Inquiry Popup</button>`;
+        }
+        appendMessage('bot', reply);
+      }, 600);
+    }
+
+    // Quick Contact Modal Controls
+    function openQuickContactModal(serviceName, defaultMsg = '') {
+      const modal = document.getElementById('quick-contact-modal');
+      const card = document.getElementById('quick-modal-card');
+      const select = document.getElementById('quick-service-select');
+      const messageField = document.getElementById('quick-message');
+
+      if (select && serviceName) {
+        select.value = serviceName;
+      }
+      if (messageField) {
+        messageField.value = defaultMsg || `Hello, I have an inquiry regarding ${serviceName || 'your services'}.`;
+      }
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      setTimeout(() => {
+        card.classList.remove('scale-95', 'opacity-0');
+      }, 50);
+    }
+
+    function closeQuickContactModal() {
+      const modal = document.getElementById('quick-contact-modal');
+      const card = document.getElementById('quick-modal-card');
+      card.classList.add('scale-95', 'opacity-0');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }, 300);
+    }
+
+    function handleQuickSubmit(event) {
+      event.preventDefault();
+      const form = document.getElementById('quick-contact-form');
+      const card = document.getElementById('quick-modal-card');
+
+      // Store selected service to reference in success screen
+      const selectedSvc = document.getElementById('quick-service-select').value;
+      const originalHTML = card.innerHTML;
+
+      card.innerHTML = `
+        <div class="p-8 text-center space-y-4">
+          <div class="w-16 h-16 rounded-full bg-green-100 text-green-500 flex items-center justify-center mx-auto mb-2 text-2xl animate-pulse">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <h4 class="text-lg font-black uppercase text-navy tracking-wider">Inquiry Received</h4>
+          <p class="text-xs text-slate-650 max-w-sm mx-auto leading-relaxed">
+            Thank you for reaching out! Your request regarding <span class="font-bold text-brandBlue">${selectedSvc}</span> has been logged. Our specialists will contact you shortly.
+          </p>
+          <button onclick="closeQuickContactModal();" class="bg-navy hover:bg-navy-light text-white text-[10px] font-bold px-6 py-2.5 rounded-full uppercase tracking-wider transition">
+            Close Window
+          </button>
+        </div>
+      `;
+
+      setTimeout(() => {
+        form.reset();
+        card.innerHTML = originalHTML;
+      }, 3000);
+    }
+
+    // Show Chatbot Notification Bubble on Scroll (trigger after scrolling 250px)
+    let bubbleShown = false;
+    window.addEventListener('scroll', () => {
+      if (!bubbleShown && window.scrollY > 250) {
+        const bubble = document.getElementById('chatbot-bubble');
+        if (bubble) {
+          bubble.classList.remove('hidden');
+          setTimeout(() => {
+            bubble.classList.remove('translate-y-4', 'opacity-0');
+          }, 50);
+          bubbleShown = true;
+          // Auto-hide bubble after 8 seconds
+          setTimeout(() => {
+            dismissChatBubble();
+          }, 8000);
         }
       }
-    }
+    });
 
-    function slideTestimonial(direction) {
-      currentTestimonialSlideIndex += direction;
-      if (currentTestimonialSlideIndex >= totalSlides) {
-        currentTestimonialSlideIndex = 0;
-      } else if (currentTestimonialSlideIndex < 0) {
-        currentTestimonialSlideIndex = totalSlides - 1;
+    function dismissChatBubble() {
+      const bubble = document.getElementById('chatbot-bubble');
+      if (bubble) {
+        bubble.classList.add('translate-y-4', 'opacity-0');
+        setTimeout(() => {
+          bubble.classList.add('hidden');
+        }, 500);
       }
-      updateSliderPosition();
     }
-
-    function setTestimonialSlide(index) {
-      currentTestimonialSlideIndex = index;
-      updateSliderPosition();
-    }
-
-    // Auto rotate testimonials slider every 10 seconds
-    setInterval(() => {
-      slideTestimonial(1);
-    }, 10000);
   </script>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/97142762233" target="_blank" rel="noopener noreferrer"
+    class="fixed bottom-6 left-6 z-50 w-14 h-14 rounded-full bg-[#25d366] text-white flex items-center justify-center shadow-lg hover:bg-[#20ba5a] hover:scale-110 hover:shadow-xl transition-all duration-300"
+    aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp text-3xl"></i>
+  </a>
+
+  <!-- Floating Chatbot Button -->
+  <button onclick="toggleChatbot()"
+    class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-brandBlue text-white flex items-center justify-center shadow-lg hover:bg-brandBlue-dark hover:scale-110 hover:shadow-xl transition-all duration-300 group"
+    aria-label="Open Chatbot">
+    <!-- Pulse Ring Animation -->
+    <span class="absolute inset-0 rounded-full bg-brandBlue/40 animate-ping group-hover:animate-none"></span>
+    <i class="fa-solid fa-comments text-2xl relative z-10"></i>
+  </button>
+
+  <!-- Chatbot Scroll Notification Bubble -->
+  <div id="chatbot-bubble"
+    class="fixed bottom-24 right-6 z-50 bg-white border border-slate-100 shadow-2xl rounded-2xl p-4 max-w-[260px] hidden transition-all duration-500 transform translate-y-4 opacity-0">
+    <div class="relative">
+      <button onclick="dismissChatBubble()" class="absolute -top-1 -right-1 text-slate-400 hover:text-slate-650 p-1">
+        <i class="fa-solid fa-xmark text-[10px]"></i>
+      </button>
+      <div class="flex items-start gap-2.5">
+        <div
+          class="w-8 h-8 rounded-full bg-brandBlue text-white flex items-center justify-center font-bold text-xs shrink-0">
+          KM</div>
+        <div>
+          <h5 class="text-[10px] font-bold text-navy leading-none uppercase tracking-wider mb-1">Kreston Assistant</h5>
+          <p class="text-[10.5px] text-slate-600 leading-normal">👋 Hi there! Need help with your Audit, Tax, or
+            Business setup? Chat with us!</p>
+        </div>
+      </div>
+      <!-- Triangle Indicator pointing down to chatbot icon -->
+      <div
+        class="absolute bottom-[-24px] right-4 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[8px] border-t-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.08)]">
+      </div>
+    </div>
+  </div>
+
+  <!-- Chatbot Wrapper Container (Supports corner popup or scroll-triggered screen centering) -->
+  <div id="chatbot-container" class="fixed bottom-24 right-6 z-50 transition-all duration-300">
+    <!-- Backdrop Overlay (only active in center mode) -->
+    <div id="chatbot-backdrop" class="fixed inset-0 bg-navy-950/60 backdrop-blur-sm hidden z-0"
+      onclick="toggleChatbot()"></div>
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot-window"
+      class="relative z-10 w-80 sm:w-96 bg-white rounded-2xl shadow-2xl border border-slate-100 hidden flex-col overflow-hidden transition-all duration-300 transform translate-y-4 opacity-0">
+      <!-- Header -->
+      <div class="bg-navy p-4 text-white flex justify-between items-center">
+        <div class="flex items-center gap-2">
+          <div class="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></div>
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider leading-none">Kreston Assistant</h4>
+            <span class="text-[9px] text-slate-300">Online | Audit & Tax Expert</span>
+          </div>
+        </div>
+        <button onclick="toggleChatbot()" class="text-white/80 hover:text-white transition">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Messages -->
+      <div id="chat-messages" class="p-4 h-64 overflow-y-auto space-y-3 bg-slate-50 text-xs">
+        <div class="flex gap-2">
+          <div
+            class="w-6 h-6 rounded-full bg-brandBlue text-white flex items-center justify-center font-bold text-[10px]">
+            KM
+          </div>
+          <div class="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm max-w-[80%] text-slate-700">
+            Hello! Welcome to Kreston Menon. How can we assist you with your business goals today?
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Options -->
+      <div class="px-4 py-2 border-t border-slate-100 flex flex-wrap gap-2 bg-white">
+        <button onclick="sendQuickMessage('Book an Audit')"
+          class="text-[10px] bg-slate-100 hover:bg-brandBlue/10 hover:text-brandBlue text-slate-600 px-2.5 py-1.5 rounded-full font-semibold transition">Book
+          an Audit</button>
+        <button onclick="sendQuickMessage('Corporate Tax Inquiry')"
+          class="text-[10px] bg-slate-100 hover:bg-brandBlue/10 hover:text-brandBlue text-slate-600 px-2.5 py-1.5 rounded-full font-semibold transition">Corporate
+          Tax</button>
+        <button onclick="sendQuickMessage('FDI Setup')"
+          class="text-[10px] bg-slate-100 hover:bg-brandBlue/10 hover:text-brandBlue text-slate-600 px-2.5 py-1.5 rounded-full font-semibold transition">Business
+          Setup</button>
+      </div>
+
+      <!-- Input -->
+      <form onsubmit="handleChatSubmit(event)" class="p-3 border-t border-slate-100 flex gap-2 bg-white">
+        <input type="text" id="chat-input" placeholder="Type your message..." required
+          class="flex-1 bg-slate-50 border border-slate-100 px-4 py-2 rounded-xl text-xs focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue text-navy" />
+        <button type="submit"
+          class="bg-brandBlue hover:bg-brandBlue-dark text-white w-8 h-8 rounded-xl flex items-center justify-center transition">
+          <i class="fa-solid fa-paper-plane text-xs"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Quick Contact Modal (Popup for Particular Problem) -->
+  <div id="quick-contact-modal" class="fixed inset-0 z-[110] hidden items-center justify-center p-4">
+    <!-- Backdrop -->
+    <div onclick="closeQuickContactModal()" class="absolute inset-0 bg-navy-950/60 backdrop-blur-sm"></div>
+
+    <!-- Modal Card -->
+    <div
+      class="bg-white rounded-3xl shadow-2xl border border-slate-100 max-w-lg w-full overflow-hidden relative z-10 transition-all duration-300 transform scale-95 opacity-0"
+      id="quick-modal-card">
+      <!-- Header -->
+      <div class="bg-navy p-6 text-white flex justify-between items-center relative overflow-hidden">
+        <!-- Accent -->
+        <div class="absolute inset-0 bg-gradient-to-r from-brandBlue to-[#0084b4] opacity-20"></div>
+        <div class="relative z-10">
+          <h4 class="text-sm font-black uppercase tracking-wider" id="quick-modal-title">Request Assistance</h4>
+          <p class="text-[10px] text-slate-200" id="quick-modal-subtitle">Submit your problem & we will connect you to
+            our experts</p>
+        </div>
+        <button onclick="closeQuickContactModal()"
+          class="text-white/80 hover:text-white transition relative z-10 p-1 hover:bg-white/10 rounded-full">
+          <i class="fa-solid fa-xmark text-base"></i>
+        </button>
+      </div>
+
+      <!-- Form Content -->
+      <form id="quick-contact-form" onsubmit="handleQuickSubmit(event)" class="p-6 space-y-4">
+        <!-- Name & Email in 2 columns -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-[9px] font-extrabold uppercase text-slate-500 mb-1">Your Name</label>
+            <input type="text" required id="quick-name" placeholder="John Doe"
+              class="w-full bg-slate-50 border border-slate-200 px-4 py-3 rounded-xl text-xs text-navy focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue" />
+          </div>
+          <div>
+            <label class="block text-[9px] font-extrabold uppercase text-slate-500 mb-1">Email Address</label>
+            <input type="email" required id="quick-email" placeholder="john@example.com"
+              class="w-full bg-slate-50 border border-slate-200 px-4 py-3 rounded-xl text-xs text-navy focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue" />
+          </div>
+        </div>
+
+        <!-- Phone & Selected Service -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-[9px] font-extrabold uppercase text-slate-500 mb-1">Phone Number</label>
+            <input type="tel" required id="quick-phone" placeholder="+971 50 123 4567"
+              class="w-full bg-slate-50 border border-slate-200 px-4 py-3 rounded-xl text-xs text-navy focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue" />
+          </div>
+          <div>
+            <label class="block text-[9px] font-extrabold uppercase text-slate-500 mb-1">Service Required</label>
+            <select id="quick-service-select" required
+              class="w-full bg-slate-50 border border-slate-200 px-4 py-3 rounded-xl text-xs text-slate-500 focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue">
+              <option value="Audit & Assurance">Audit & Assurance</option>
+              <option value="Business Advisory">Business Advisory</option>
+              <option value="AML Compliance">AML Compliance</option>
+              <option value="Corporate Tax">Corporate Tax</option>
+              <option value="ICV Certification Program">ICV Certification Program</option>
+              <option value="Payroll Services">Payroll Services</option>
+              <option value="Technology Consulting">Technology Consulting</option>
+              <option value="Bookkeeping & Accounting Services">Bookkeeping & Accounting Services</option>
+              <option value="Company Formation & Corporate Services">Company Formation & Corporate Services</option>
+              <option value="Corporate Finance">Corporate Finance</option>
+              <option value="Governance & Risk Management">Governance & Risk Management</option>
+              <option value="VAT Consulting & E-Invoicing">VAT Consulting & E-Invoicing</option>
+              <option value="Debt Advisory">Debt Advisory</option>
+              <option value="Strategic Financial Advisory">Strategic Financial Advisory</option>
+              <option value="Security & Cyber Resilience">Security & Cyber Resilience</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Message/Problem Area -->
+        <div>
+          <label class="block text-[9px] font-extrabold uppercase text-slate-500 mb-1">Describe Your Problem /
+            Requirement</label>
+          <textarea id="quick-message" rows="3" required
+            placeholder="Please describe your specific business problem or question here..."
+            class="w-full bg-slate-50 border border-slate-200 px-4 py-3 rounded-xl text-xs text-navy focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit"
+          class="w-full bg-brandBlue hover:bg-brandBlue-dark text-white font-bold py-3.5 px-6 rounded-xl transition duration-300 shadow-lg text-xs uppercase tracking-widest hover:-translate-y-0.5 shadow-brandBlue/10 hover:shadow-xl">
+          Submit Inquiry
+        </button>
+      </form>
+    </div>
+  </div>
 
 </body>
 
