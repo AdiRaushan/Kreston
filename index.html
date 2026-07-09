@@ -281,7 +281,7 @@
 
   <!-- HERO SECTION -->
   <section id="home"
-    class="relative lg:h-[calc(100vh-130px)] lg:min-h-[620px] flex flex-col justify-center overflow-hidden pt-24 pb-8 lg:pt-16 lg:pb-4">
+    class="relative min-h-[820px] lg:min-h-[620px] lg:h-[calc(100vh-130px)] flex flex-col justify-center overflow-hidden pt-32 pb-12 lg:pt-16 lg:pb-4">
     <!-- Background Image & Overlay -->
     <div class="absolute inset-0 z-0">
       <img class="w-full h-full object-cover object-right"
@@ -290,7 +290,7 @@
       <div class="absolute inset-0 bg-[#0b2c3d]/65 lg:bg-transparent z-10"></div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col justify-between h-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col justify-between h-full gap-6">
       <!-- Title & CTA Button -->
       <div class="max-w-3xl space-y-3 pt-2 pb-2 lg:pb-3">
         <!-- Dot Category Label -->
@@ -314,14 +314,14 @@
         </div>
       </div>
 
-      <!-- 15 Service Cards Grid (Grid on desktop, horizontal swipable carousel on mobile) -->
+      <!-- 15 Service Cards (Vertical scroll box on mobile, grid on desktop) -->
       <div
-        class="w-full flex overflow-x-auto snap-x no-scrollbar lg:grid lg:grid-cols-5 gap-3 lg:gap-4 mt-2 lg:mt-3 py-2"
+        class="w-full h-72 overflow-y-auto no-scrollbar grid grid-cols-2 gap-3 lg:h-auto lg:overflow-visible lg:grid-cols-5 lg:gap-4 mt-2 lg:mt-3 py-1"
         id="services-grid">
 
         <!-- Card 1 -->
         <a href="#contact" onclick="selectServiceAndScroll('Audit & Assurance'); return false;"
-          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 w-full lg:w-auto">
           <i
             class="fa-solid fa-file-invoice text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
           <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Audit & Assurance
@@ -330,7 +330,7 @@
 
         <!-- Card 2 -->
         <a href="#contact" onclick="selectServiceAndScroll('Business Advisory'); return false;"
-          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 w-full lg:w-auto">
           <i
             class="fa-solid fa-chart-pie text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
           <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Business Advisory
@@ -339,7 +339,7 @@
 
         <!-- Card 3 -->
         <a href="#contact" onclick="selectServiceAndScroll('AML Compliance'); return false;"
-          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 w-full lg:w-auto">
           <i
             class="fa-solid fa-shield-halved text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
           <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">AML Compliance
@@ -348,7 +348,7 @@
 
         <!-- Card 4 -->
         <a href="#contact" onclick="selectServiceAndScroll('Corporate Tax'); return false;"
-          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 w-full lg:w-auto">
           <i
             class="fa-solid fa-percent text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
           <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Corporate Tax
@@ -357,7 +357,7 @@
 
         <!-- Card 5 -->
         <a href="#contact" onclick="selectServiceAndScroll('ICV Certification Program'); return false;"
-          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 w-full lg:w-auto">
           <i
             class="fa-solid fa-award text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
           <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">ICV Certification
@@ -366,7 +366,7 @@
 
         <!-- Card 6 -->
         <a href="#contact" onclick="selectServiceAndScroll('Payroll Services'); return false;"
-          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 w-full lg:w-auto">
           <i
             class="fa-solid fa-money-check-dollar text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
           <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Payroll Services
@@ -375,7 +375,7 @@
 
         <!-- Card 7 -->
         <a href="#contact" onclick="selectServiceAndScroll('Technology Consulting'); return false;"
-          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 w-full lg:w-auto">
           <i
             class="fa-solid fa-laptop-code text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
           <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Technology
@@ -384,7 +384,7 @@
 
         <!-- Card 8 -->
         <a href="#contact" onclick="selectServiceAndScroll('Bookkeeping & Accounting Services'); return false;"
-          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 w-full lg:w-auto">
           <i
             class="fa-solid fa-book-open text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
           <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Bookkeeping
@@ -393,7 +393,7 @@
 
         <!-- Card 9 -->
         <a href="#contact" onclick="selectServiceAndScroll('Company Formation & Corporate Services'); return false;"
-          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 w-full lg:w-auto">
           <i
             class="fa-solid fa-building text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
           <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Company Setup
@@ -402,7 +402,7 @@
 
         <!-- Card 10 -->
         <a href="#contact" onclick="selectServiceAndScroll('Corporate Finance'); return false;"
-          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 w-full lg:w-auto">
           <i
             class="fa-solid fa-coins text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
           <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Corporate Finance
@@ -411,7 +411,7 @@
 
         <!-- Card 11 -->
         <a href="#contact" onclick="selectServiceAndScroll('Governance & Risk Management'); return false;"
-          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 w-full lg:w-auto">
           <i
             class="fa-solid fa-scale-balanced text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
           <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Risk Management
@@ -420,7 +420,7 @@
 
         <!-- Card 12 -->
         <a href="#contact" onclick="selectServiceAndScroll('VAT Consulting & E-Invoicing'); return false;"
-          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 w-full lg:w-auto">
           <i
             class="fa-solid fa-receipt text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
           <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">VAT & E-Invoicing
@@ -429,7 +429,7 @@
 
         <!-- Card 13 -->
         <a href="#contact" onclick="selectServiceAndScroll('Debt Advisory'); return false;"
-          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 w-full lg:w-auto">
           <i
             class="fa-solid fa-file-shield text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
           <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Debt Advisory
@@ -438,7 +438,7 @@
 
         <!-- Card 14 -->
         <a href="#contact" onclick="selectServiceAndScroll('Strategic Financial Advisory'); return false;"
-          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 w-full lg:w-auto">
           <i
             class="fa-solid fa-lightbulb text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
           <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Financial
@@ -447,7 +447,7 @@
 
         <!-- Card 15 -->
         <a href="#contact" onclick="selectServiceAndScroll('Security & Cyber Resilience'); return false;"
-          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 snap-center shrink-0 w-[44%] sm:w-[30%] lg:w-auto">
+          class="group bg-white border border-[#bfe9fc] p-4 lg:p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:border-brandBlue hover:scale-[1.03] transition-all duration-300 shadow-sm hover:shadow-md h-24 lg:h-28 w-full lg:w-auto">
           <i
             class="fa-solid fa-shield-virus text-2xl lg:text-3xl text-brandBlue mb-2 transition-transform group-hover:scale-110"></i>
           <h3 class="text-[9px] lg:text-xs font-bold text-navy uppercase tracking-wider leading-tight">Cyber Resilience
