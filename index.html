@@ -87,16 +87,28 @@
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
+
+    /* Sticky header scroll styles */
+    #top-header-row {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #top-header-row.scrolled-top {
+      max-height: 0 !important;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      opacity: 0;
+      pointer-events: none;
+    }
   </style>
 </head>
 
 <body class="antialiased bg-white text-slate-800 selection:bg-brandBlue/20 selection:text-navy overflow-x-hidden">
 
   <!-- TWO-ROW NAVIGATION HEADER -->
-  <header class="w-full z-50 bg-transparent absolute top-0 left-0 lg:relative lg:bg-white">
+  <header id="main-header" class="w-full z-50 fixed top-0 left-0 lg:sticky lg:top-0 bg-transparent lg:bg-white transition-all duration-300">
 
     <!-- Top Row -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 bg-transparent lg:bg-white">
+    <div id="top-header-row" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 bg-transparent lg:bg-white max-h-24 overflow-hidden">
       <div class="flex justify-between items-center">
         <!-- Logo -->
         <a href="#home" class="flex items-center">
@@ -145,17 +157,29 @@
     </div>
 
     <!-- Bottom Row (Dark Navy Bar) -->
-    <div class="w-full bg-[#1e2d3b] border-t border-slate-100 hidden lg:block relative z-40">
+    <div id="bottom-header-row" class="w-full bg-[#0b2c3d]/90 backdrop-blur-md border-t border-slate-100/10 hidden lg:block transition-all duration-300">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <nav class="flex items-center gap-8 py-3 text-xs font-bold text-slate-300 uppercase tracking-wider">
-          <a href="#home" class="text-white hover:text-brandBlue transition-colors py-1">Home</a>
-          <a href="#about" class="hover:text-brandBlue transition-colors py-1">About Us</a>
-          <a href="#services-grid" class="hover:text-brandBlue transition-colors py-1">Services</a>
-          <a href="#international" class="hover:text-brandBlue transition-colors py-1">International</a>
-          <a href="#gallery" class="hover:text-brandBlue transition-colors py-1">Gallery</a>
-          <a href="#latest-news" class="hover:text-brandBlue transition-colors py-1">Latest News</a>
-          <a href="#contact" class="hover:text-brandBlue transition-colors py-1">Contact Us</a>
-        </nav>
+        <div class="flex items-center justify-between py-3">
+          <!-- Logo (Slide in on scroll) -->
+          <a href="#home" id="nav-logo" class="flex items-center opacity-0 -translate-x-4 max-w-0 pointer-events-none transition-all duration-300">
+            <img src="https://www.krestonsvp.com/wp-content/uploads/2025/10/Untitled-2-1-scaled.png" alt="Kreston SVP Logo" class="h-10 w-auto object-contain brightness-0 invert" />
+          </a>
+
+          <nav class="flex items-center gap-8 text-xs font-bold text-slate-300 uppercase tracking-wider">
+            <a href="#home" class="text-white hover:text-brandBlue transition-colors py-1">Home</a>
+            <a href="#about" class="hover:text-brandBlue transition-colors py-1">About Us</a>
+            <a href="#services-grid" class="hover:text-brandBlue transition-colors py-1">Services</a>
+            <a href="#international" class="hover:text-brandBlue transition-colors py-1">International</a>
+            <a href="#gallery" class="hover:text-brandBlue transition-colors py-1">Gallery</a>
+            <a href="#latest-news" class="hover:text-brandBlue transition-colors py-1">Latest News</a>
+            <a href="#contact" class="hover:text-brandBlue transition-colors py-1">Contact Us</a>
+          </nav>
+
+          <!-- Get in Touch CTA (Slide in on scroll) -->
+          <a href="#contact" id="nav-cta" class="opacity-0 translate-x-4 pointer-events-none transition-all duration-300 bg-gradient-to-r from-brandBlue to-[#0084b4] hover:from-[#0084b4] hover:to-brandBlue text-white py-1.5 px-4 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-md">
+            Get in Touch
+          </a>
+        </div>
       </div>
     </div>
   </header>
@@ -1743,6 +1767,45 @@
       drawerClose.addEventListener('click', closeDrawer);
       drawerOverlay.addEventListener('click', closeDrawer);
       drawerLinks.forEach(link => link.addEventListener('click', closeDrawer));
+
+      // Sticky header scroll transition logic
+      const header = document.getElementById('main-header');
+      const topRow = document.getElementById('top-header-row');
+      const navLogo = document.getElementById('nav-logo');
+      const navCta = document.getElementById('nav-cta');
+
+      function handleScroll() {
+        if (window.scrollY > 80) {
+          header.classList.remove('bg-transparent', 'lg:bg-white');
+          header.classList.add('bg-navy/90', 'backdrop-blur-md', 'shadow-md', 'border-b', 'border-white/10');
+          topRow.classList.add('scrolled-top');
+          
+          if (navLogo) {
+            navLogo.classList.remove('opacity-0', '-translate-x-4', 'max-w-0', 'pointer-events-none');
+            navLogo.classList.add('opacity-100', 'translate-x-0', 'max-w-[200px]');
+          }
+          if (navCta) {
+            navCta.classList.remove('opacity-0', 'translate-x-4', 'pointer-events-none');
+            navCta.classList.add('opacity-100', 'translate-x-0');
+          }
+        } else {
+          header.classList.remove('bg-navy/90', 'backdrop-blur-md', 'shadow-md', 'border-b', 'border-white/10');
+          header.classList.add('bg-transparent', 'lg:bg-white');
+          topRow.classList.remove('scrolled-top');
+          
+          if (navLogo) {
+            navLogo.classList.add('opacity-0', '-translate-x-4', 'max-w-0', 'pointer-events-none');
+            navLogo.classList.remove('opacity-100', 'translate-x-0', 'max-w-[200px]');
+          }
+          if (navCta) {
+            navCta.classList.add('opacity-0', 'translate-x-4', 'pointer-events-none');
+            navCta.classList.remove('opacity-100', 'translate-x-0');
+          }
+        }
+      }
+
+      window.addEventListener('scroll', handleScroll);
+      handleScroll(); // Initialize on load
     });
 
     // Submit RFP Modal Control
